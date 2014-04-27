@@ -1,0 +1,28 @@
+{
+    "name": "particle-pack-1",
+    "version": "0.9.0",
+    "description": "A WebGL particle pack for Kiwi.js.",
+    "author": "GameLab",
+    "logo": "xx",
+
+    "homepage": "http://kiwijs.org/",
+    "bugs": "xx",
+    "license": "MIT",
+    "licenseUrl": "xx",
+
+    "repository": {
+        "type": "git",
+        "url": "xx"
+    },
+
+    "main": "src/*.js",
+
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.x",
+        "grunt-contrib-uglify": "0.2.x",
+        "grunt-contrib-yuidoc": "0.4.x",
+        "grunt-contrib-copy":  "0.4.x",
+        "grunt-contrib-concat" : "latest"
+    }
+}
