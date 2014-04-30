@@ -2,17 +2,19 @@
     "name": "particle-pack-1",
     "version": "0.9.0",
     "description": "A WebGL particle pack for Kiwi.js.",
-    "author": "GameLab",
-    "logo": "xx",
+    "author": {
+        "name" : "GameLab",
+        "email" : ""
+        },
 
     "homepage": "http://kiwijs.org/",
-    "bugs": "xx",
-    "license": "MIT",
-    "licenseUrl": "xx",
+    "bugs": "https://github.com/gamelab/particle-pack-1-plugin/issues",
+    "license": "GPL-2.0",
+    "licenseUrl": "https://github.com/gamelab/particle-pack-1-plugin/blob/master/license.txt",
 
     "repository": {
         "type": "git",
-        "url": "xx"
+        "url": "https://github.com/gamelab/particle-pack-1-plugin"
     },
 
     "main": "src/*.js",
