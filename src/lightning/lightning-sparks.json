@@ -1,59 +1,60 @@
 {
-  "numParts": 30,
+  "numParts": 10,
   "posOffsetX": 0,
   "posOffsetY": 0,
-  "posRadius": 100,
+  "posRadius": 5,
   "posRadialStart": 0,
-  "posRadialEnd": 3.142,
+  "posRadialEnd": 6.230825429619757,
   "posWidth": 200,
   "posHeight": 200,
   "posConstrainRect": true,
   "posAngle": 0,
-  "posLength": 1,
+  "posLength": 33,
   "posRandomLine": true,
   "posConstrainRadial": true,
   "posRandomRadial": true,
-  "posShape": "point",
-  "maxVel": 802,
-  "minVel": 812,
+  "posShape": "radial",
+  "maxVel": 100,
+  "minVel": 70,
   "velConstrainRect": true,
   "velConstrainRadial": true,
-  "velRandomRadial": true,
-  "velShape": "line",
+  "velRandomRadial": false,
+  "velShape": "radial",
   "velOffsetX": 0,
-  "velOffsetY": -200,
-  "velAngMin": -0.2,
-  "velAngMax": 0.2,
-  "velRadius": 200,
+  "velOffsetY": -150,
+  "velAngMin": -5,
+  "velAngMax": 2,
+  "velRadius": 100,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
   "velWidth": 200,
   "velHeight": 200,
   "velAngle": 0,
-  "velLength": 50,
+  "velLength": 200,
   "velRandomLine": true,
   "minStartTime": 0,
-  "maxStartTime": 0.8,
-  "minLifespan": 0.8,
+  "maxStartTime": 0.1,
+  "minLifespan": 0.4,
   "maxLifespan": 1,
-  "gravity": 0,
-  "startSize": 2,
-  "endSize": 200,
-  "loop": true,
+  "gravityX": 0,
+  "gravityY": 400,
+  "startSize": 1,
+  "endSize": 10,
+  "loop": false,
   "colEnvKeyframes": [
     0.5,
     0.6
   ],
-  "alpha": 0.5,
+  "alpha": "1",
   "colEnv0": [
-    0.9647058823529412,
     0.9882352941176471,
-    0.9882352941176471
+    0.9411764705882353,
+    0.9411764705882353
   ],
   "colEnv1": [
-    0.792156862745098,
-    0.8745098039215686,
-    1
+    1,
+    1,
+    0
   ],
   "colEnv2": [
     1,
@@ -61,9 +62,9 @@
     1
   ],
   "colEnv3": [
-    0.5686274509803921,
-    0.7529411764705882,
-    0.9215686274509803
+    1,
+    0.9058823529411765,
+    0
   ],
   "alphaGradient": [
     1,
@@ -75,10 +76,9 @@
     0.3,
     0.7
   ],
+  "additive": true,
   "cells": [
-    12
+    6
   ],
-  "textureID": "_128x128",
-  "gravityX": 0,
-  "gravityY": 0
+  "textureID": "_16x16"
 }

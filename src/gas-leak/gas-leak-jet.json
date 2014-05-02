@@ -1,5 +1,5 @@
 {
-  "numParts": 30,
+  "numParts": 5,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 100,
@@ -9,19 +9,19 @@
   "posHeight": 200,
   "posConstrainRect": true,
   "posAngle": 0,
-  "posLength": 1,
+  "posLength": 200,
   "posRandomLine": true,
   "posConstrainRadial": true,
   "posRandomRadial": true,
   "posShape": "point",
-  "maxVel": 802,
-  "minVel": 812,
+  "maxVel": 725,
+  "minVel": -478,
   "velConstrainRect": true,
   "velConstrainRadial": true,
   "velRandomRadial": true,
-  "velShape": "line",
+  "velShape": "point",
   "velOffsetX": 0,
-  "velOffsetY": -200,
+  "velOffsetY": -100,
   "velAngMin": -0.2,
   "velAngMax": 0.2,
   "velRadius": 200,
@@ -30,30 +30,31 @@
   "velWidth": 200,
   "velHeight": 200,
   "velAngle": 0,
-  "velLength": 50,
+  "velLength": 10,
   "velRandomLine": true,
   "minStartTime": 0,
-  "maxStartTime": 0.8,
-  "minLifespan": 0.8,
+  "maxStartTime": 0.6,
+  "minLifespan": 0.2,
   "maxLifespan": 1,
-  "gravity": 0,
-  "startSize": 2,
-  "endSize": 200,
+  "gravityX": 0,
+  "gravityY": 0,
+  "startSize": 50,
+  "endSize": 100,
   "loop": true,
   "colEnvKeyframes": [
     0.5,
     0.6
   ],
-  "alpha": 0.5,
+  "alpha": 0.7,
   "colEnv0": [
-    0.9647058823529412,
     0.9882352941176471,
-    0.9882352941176471
+    0.9764705882352941,
+    0.9803921568627451
   ],
   "colEnv1": [
-    0.792156862745098,
-    0.8745098039215686,
-    1
+    0.7725490196078432,
+    0.803921568627451,
+    0.7803921568627451
   ],
   "colEnv2": [
     1,
@@ -61,12 +62,12 @@
     1
   ],
   "colEnv3": [
-    0.5686274509803921,
-    0.7529411764705882,
-    0.9215686274509803
+    0.7137254901960784,
+    0.7137254901960784,
+    0.7137254901960784
   ],
   "alphaGradient": [
-    1,
+    "0",
     1,
     1,
     0
@@ -75,10 +76,9 @@
     0.3,
     0.7
   ],
+  "additive": false,
   "cells": [
-    12
+    4
   ],
-  "textureID": "_128x128",
-  "gravityX": 0,
-  "gravityY": 0
+  "textureID": "_128x128"
 }
