@@ -8,7 +8,9 @@
   <script src="../lib/particles-gl-0.9.5.min.js"></script>
 
   <!-- include the plugin AFTER the dependencies -->
-  <script src="../particle-pack-1-0.9.0.min.js"></script>
+  <script src="../src/particlepack1-0.1.0.js"></script>
+  <script src="../src/bam/bam.js"></script>
+
 
 
   
@@ -26,7 +28,7 @@
 
 		MyState.preload = function() {
 			this.game.stage.color="000000"
-    		this.addImage('particle', '../assets/particle_01.png');
+    		this.addSpriteSheet('particlePack1', '../assets/particlepack1.png', 128, 128, false, 8, 5, 5, 27, 27, 54, 54);
   		};
 
 		MyState.create = function() {
@@ -36,18 +38,16 @@
 			//2) the texture to use,
 			//3) an optional configuration object (see example configuration below). if not supplied or null, this will use a default configuration.
 			//4) whether to start generate and start emitting particles immediately (also optional - defaults to true)	
-			var particle = new Kiwi.GameObjects.StatelessParticles(this,this.textures.particle,400,300,config);
-
+			//var particle = new Kiwi.GameObjects.StatelessParticles(this,this.textures.particle,400,300,config);
+      console.log(this.textures)
+      var particle = new Kiwi.Plugins.ParticlePack1.Bam(this,100,100);
 			//if you haven't started the particle objects yet then you can adjust the configuration
-			particle.config.numParts = 50;
+			//particle.config.numParts = 50;
 			//start the particle object
 
-      particle.startEmitting(true,false);
+      particle.startEmitting();
    
-      setTimeout(function(){
-        particle.stopEmitting(false,false);
-        
-      },5000);
+      
 
 			this.addChild(particle);
 			

@@ -1,10 +1,12 @@
+
 /**
-* The particles plugin creates a new gameobject "StatelessParticles" to the Kiwi.GameObject object 
+* The description of particlePack1 goes here
 *
 * @module Kiwi
 * @submodule Plugins
 * @namespace Kiwi.Plugins
-* @class ParticlesGL
+* @class particlePack1
+* @main
 */
 Kiwi.Plugins.ParticlePack1 = {
   
@@ -12,7 +14,6 @@ Kiwi.Plugins.ParticlePack1 = {
   * The name of this plugin.
   * @property name
   * @type String
-  * @default 'MyPlugin'
   * @public
   */
   name:'ParticlePack1',

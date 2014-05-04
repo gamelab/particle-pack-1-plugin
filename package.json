@@ -1,20 +1,20 @@
 {
-    "name": "particle-pack-1",
-    "version": "0.9.0",
-    "description": "A WebGL particle pack for Kiwi.js.",
+    "name": "ParticlePack1",
+    "version": "0.1.0",
+    "description": "Description for ParticlePack1.",
     "author": {
         "name" : "GameLab",
         "email" : ""
         },
 
     "homepage": "http://kiwijs.org/",
-    "bugs": "https://github.com/gamelab/particle-pack-1-plugin/issues",
-    "license": "GPL-2.0",
-    "licenseUrl": "https://github.com/gamelab/particle-pack-1-plugin/blob/master/license.txt",
+    "bugs": "",
+    "license": "",
+    "licenseUrl": "",
 
     "repository": {
         "type": "git",
-        "url": "https://github.com/gamelab/particle-pack-1-plugin"
+        "url": ""
     },
 
     "main": "src/*.js",
@@ -25,6 +25,7 @@
         "grunt-contrib-uglify": "0.2.x",
         "grunt-contrib-yuidoc": "0.4.x",
         "grunt-contrib-copy":  "0.4.x",
-        "grunt-contrib-concat" : "latest"
+        "grunt-contrib-concat" : "latest",
+        "grunt-contrib-connect": "~0.3.0"
     }
 }
