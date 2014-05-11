@@ -79,9 +79,9 @@
 		}
 
 		var selectEffect = document.getElementById("selectEffect");
-		selectEffect.value = getParameterByName("name");
+		selectEffect.value = getParameterByName("name") || "gasfire";
 		var looping = document.getElementById("looping");
-		looping.value = getParameterByName("looping");
+		looping.value = getParameterByName("looping") || "loopAndPause";
 		var go = document.getElementById("go");
 
 		go.onclick = function (e) {
