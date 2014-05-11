@@ -14,7 +14,7 @@ Kiwi.Plugins.ParticlePack1.Explosion = function (state,x,y) {
   "posRandomLine": true,
   "posConstrainRadial": true,
   "posRandomRadial": true,
-  "posShape": "radial",
+  "posShape": "point",
   "maxVel": 802,
   "minVel": -978,
   "velConstrainRect": true,

@@ -99,7 +99,7 @@ Kiwi.Plugins.ParticlePack1.Boom = function (state,x,y) {
   "posRandomLine": true,
   "posConstrainRadial": true,
   "posRandomRadial": true,
-  "posShape": "radial",
+  "posShape": "point",
   "maxVel": 802,
   "minVel": -978,
   "velConstrainRect": true,
@@ -175,8 +175,9 @@ Kiwi.Plugins.ParticlePack1.Boom = function (state,x,y) {
   group.y = y;
   var boom = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.boomConfig);
   var explosion = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.explosionConfig);
-  group.addChild(boom);
   group.addChild(explosion);
+  group.addChild(boom);
+ 
 
   return group;
 }
