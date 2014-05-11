@@ -1,6 +1,8 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+  "name": "ParticlePack1",
+  "version": "0.1.0",
+  "dependencies": {
+  	"kiwi.js": "https://github.com/gamelab/kiwi.js.git#dev"
+  }
 }
 

@@ -1,6 +1,7 @@
 {
     "name": "ParticlePack1",
     "version": "0.1.0",
+    "filenameBase": "particlepack1",
     "description": "Description for ParticlePack1.",
     "author": {
         "name" : "GameLab",
@@ -9,7 +10,7 @@
 
     "homepage": "http://kiwijs.org/",
     "bugs": "",
-    "license": "",
+    "license": "MIT",
     "licenseUrl": "",
 
     "repository": {

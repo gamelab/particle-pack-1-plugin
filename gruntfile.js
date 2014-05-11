@@ -8,10 +8,10 @@ module.exports = function(grunt) {
     
     yuidoc: {
             compile: {
-                name: 'generator-kiwiplugin',
-                description: 'Yeoman generator',
-                version: '0.0.0',
-                url: '',
+                name: '<%= pkg.name %>',
+                description: '<%= pkg.description %>',
+                version: '<%= pkg.version %>',
+                url: '<%= pkg.homepage %>',
                 options: {
                     extension: '.js',                               
                     paths: 'src/',
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     uglify: {
             build: {
                 files: {
-                'particlePack1-0.0.0.min.js': ['app/index.js']
+                '<%= pkg.filenameBase %>-<%= pkg.version %>.min.js': ['<%= pkg.main %>']
             }
         }
     },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     concat: {
           build: {
             src:['src/*'],
-            dest: 'generator-kiwiplugin-0.0.0.js'
+            dest: '<%= pkg.filenameBase %>-<%= pkg.version %>.js'
           }
     },
     
