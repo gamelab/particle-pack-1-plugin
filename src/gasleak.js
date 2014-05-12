@@ -68,7 +68,7 @@ Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) {
     0.8705882352941177
   ],
   "alphaGradient": [
-    0,
+    1,
     1,
     1,
     0
@@ -85,7 +85,7 @@ Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) {
 }
 
 this.jetConfig = {
-  "numParts": 5,
+  "numParts": 6,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 100,
@@ -105,7 +105,7 @@ this.jetConfig = {
   "velConstrainRect": true,
   "velConstrainRadial": true,
   "velRandomRadial": true,
-  "velShape": "point",
+  "velShape": "line",
   "velOffsetX": 0,
   "velOffsetY": -100,
   "velAngMin": -0.2,
@@ -116,12 +116,12 @@ this.jetConfig = {
   "velWidth": 200,
   "velHeight": 200,
   "velAngle": 0,
-  "velLength": 10,
+  "velLength": 20,
   "velRandomLine": true,
   "minStartTime": 0,
   "maxStartTime": 0.6,
   "minLifespan": 0.2,
-  "maxLifespan": 1,
+  "maxLifespan": 0.5,
   "gravityX": 0,
   "gravityY": 0,
   "startSize": 50,
@@ -172,7 +172,7 @@ this.jetConfig = {
   var group = new Kiwi.Group(state)
   group.x = x;
   group.y = y;
-  var clouds = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,-30,this.cloudsConfig);
+  var clouds = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,-15,this.cloudsConfig);
   var jet = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.jetConfig);
   group.addChild(clouds);
   group.addChild(jet);

@@ -1,6 +1,6 @@
 Kiwi.Plugins.ParticlePack1.Fireworks = function (state,x,y) { 
   this.config = {
-  "numParts": 15,
+  "numParts": 25,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 14.1,

@@ -22,9 +22,9 @@ Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) {
   "velRandomRadial": true,
   "velShape": "point",
   "velOffsetX": 0,
-  "velOffsetY": -150,
-  "velAngMin": 0,
-  "velAngMax": 0,
+  "velOffsetY": -120,
+  "velAngMin": -0.3,
+  "velAngMax": 0.7,
   "velRadius": 200,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -68,7 +68,7 @@ Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) {
     1
   ],
   "alphaGradient": [
-    "0",
+    "1",
     1,
     1,
     0
@@ -108,8 +108,8 @@ this.smokepuffsConfig = {
   "velShape": "center",
   "velOffsetX": 0,
   "velOffsetY": -232,
-  "velAngMin": -1,
-  "velAngMax": 1,
+  "velAngMin": -3,
+  "velAngMax": 3,
   "velRadius": 55.1,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -119,13 +119,13 @@ this.smokepuffsConfig = {
   "velLength": 89,
   "velRandomLine": false,
   "minStartTime": 0,
-  "maxStartTime": 0.2,
-  "minLifespan": 0.3,
-  "maxLifespan": 0.6,
+  "maxStartTime": 0,
+  "minLifespan": 0.4,
+  "maxLifespan": 0.4,
   "gravityY": 0,
   "gravityX": 0,
-  "startSize": 1,
-  "endSize": 185,
+  "startSize": 70,
+  "endSize": 180,
   "loop": false,
   "colEnvKeyframes": [
     "0.3",
@@ -133,14 +133,14 @@ this.smokepuffsConfig = {
   ],
   "alpha": 1,
   "colEnv0": [
-    1,
-    0.48627450980392156,
-    0.058823529411764705
+    0.5725490196078431,
+    0.796078431372549,
+    0.9921568627450981
   ],
   "colEnv1": [
-    0.9921568627450981,
-    0.8705882352941177,
-    0.07450980392156863
+    0.6862745098039216,
+    0.8313725490196079,
+    0.9921568627450981
   ],
   "colEnv2": [
     0.996078431372549,
@@ -148,9 +148,9 @@ this.smokepuffsConfig = {
     0.9529411764705882
   ],
   "colEnv3": [
-    0.9137254901960784,
-    0.7686274509803922,
-    0
+    0.7607843137254902,
+    0.807843137254902,
+    0.9137254901960784
   ],
   "alphaGradient": [
     "0",
@@ -159,7 +159,7 @@ this.smokepuffsConfig = {
     0
   ],
   "alphaStops": [
-    0.3,
+    "0.2",
     0.7
   ],
   "cells": [
