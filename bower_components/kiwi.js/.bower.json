@@ -21,11 +21,11 @@
     "test",
     "tests"
   ],
-  "_release": "a1628c462d",
+  "_release": "00f25d242d",
   "_resolution": {
     "type": "branch",
     "branch": "dev",
-    "commit": "a1628c462da059da7b6fc35915361c75231a4c90"
+    "commit": "00f25d242dca940f63600f996e976c8bfe1f54c6"
   },
   "_source": "https://github.com/gamelab/kiwi.js.git",
   "_target": "dev",
