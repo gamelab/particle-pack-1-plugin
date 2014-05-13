@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Fireworks Effect.
+  * @property Fireworks
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Fireworks = function (state,x,y) { 
   this.config = {
   "numParts": 25,

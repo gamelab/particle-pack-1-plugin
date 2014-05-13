@@ -1,0 +1,547 @@
+{
+    "project": {
+        "name": "ParticlePack1",
+        "description": "Description for ParticlePack1.",
+        "version": "0.1.0",
+        "url": "http://kiwijs.org/"
+    },
+    "files": {
+        "src\\bam.js": {
+            "name": "src\\bam.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\bluefire.js": {
+            "name": "src\\bluefire.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\boom.js": {
+            "name": "src\\boom.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\explosion.js": {
+            "name": "src\\explosion.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fireworks.js": {
+            "name": "src\\fireworks.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\gasfire.js": {
+            "name": "src\\gasfire.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\gasleak.js": {
+            "name": "src\\gasleak.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\hitlines.js": {
+            "name": "src\\hitlines.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\kaboom.js": {
+            "name": "src\\kaboom.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\lightning.js": {
+            "name": "src\\lightning.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\orangefire.js": {
+            "name": "src\\orangefire.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\particlepack1.js": {
+            "name": "src\\particlepack1.js",
+            "modules": {
+                "Kiwi.Plugins": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.ParticlePack1": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1
+            }
+        },
+        "src\\poison.js": {
+            "name": "src\\poison.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\poof.js": {
+            "name": "src\\poof.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\pow.js": {
+            "name": "src\\pow.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\redfire.js": {
+            "name": "src\\redfire.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\smoke.js": {
+            "name": "src\\smoke.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\smokepuffs.js": {
+            "name": "src\\smokepuffs.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\stars.js": {
+            "name": "src\\stars.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\tornado.js": {
+            "name": "src\\tornado.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\zap.js": {
+            "name": "src\\zap.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Kiwi": {
+            "name": "Kiwi",
+            "submodules": {
+                "Kiwi.Plugins": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.ParticlePack1": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1
+            },
+            "file": "src\\particlepack1.js",
+            "line": 2
+        },
+        "Kiwi.Plugins": {
+            "name": "Kiwi.Plugins",
+            "submodules": {},
+            "classes": {
+                "Kiwi.Plugins.ParticlePack1": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {
+                "Kiwi.Plugins": 1
+            },
+            "module": "Kiwi",
+            "namespace": "",
+            "file": "src\\particlepack1.js",
+            "line": 2,
+            "description": "The particle pack contains a number of game objects that you can add to a state. It depends on the ParticelsGL plugin, so make sure you have that installed as well.\nYou'll need to add the spritesheets to your preloader which will look something like this\n\n<pre>\n  MyState.preload = function() {\n    this.addSpriteSheet('particlePack1SpriteSheet', '../assets/particlepack1_128.png',128, 128, false, 8, 5, 5, 27, 27, 54, 54);\n    this.addSpriteSheet('particlePack1SpriteSheet_16', '../assets/particlepack1_16.png', 16, 16, false, 8, 5, 5, 4, 4, 8, 8);\n  };\n</pre>\n\nTo create a particle effect do one of the following (this would add the effects to x:400,y:400 within a group)\n<pre>\n  this.bam = Kiwi.Plugins.ParticlePack1.Bam(this,400,300);\n  this.boom = Kiwi.Plugins.ParticlePack1.Boom(this,400,300);\n  this.explosion = Kiwi.Plugins.ParticlePack1.Explosion(this,400,300);\n  this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);\n  this.gasfire = Kiwi.Plugins.ParticlePack1.Gasfire(this,400,300);\n  this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines(this,400,300);\n  this.kaboom = Kiwi.Plugins.ParticlePack1.Kaboom(this,400,300);\n  this.poison = Kiwi.Plugins.ParticlePack1.Poison(this,400,300);\n  this.poof = Kiwi.Plugins.ParticlePack1.Poof(this,400,300);\n  this.pow = Kiwi.Plugins.ParticlePack1.Pow(this,400,300);\n  this.smoke = Kiwi.Plugins.ParticlePack1.Smoke(this,400,300);\n  this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs(this,400,300);\n  this.stars = Kiwi.Plugins.ParticlePack1.Stars(this,400,300);\n  this.tornado = Kiwi.Plugins.ParticlePack1.Tornado(this,400,300);\n  this.zap = Kiwi.Plugins.ParticlePack1.Zap(this,400,300);\n  this.bluefire = Kiwi.Plugins.ParticlePack1.Bluefire(this,400,300);\n  this.gasleak = Kiwi.Plugins.ParticlePack1.Gasleak(this,400,300);\n  this.orangefire = Kiwi.Plugins.ParticlePack1.Orangefire(this,400,300);\n  this.redfire = Kiwi.Plugins.ParticlePack1.Redfire(this,400,300);\n  this.lightning = Kiwi.Plugins.ParticlePack1.Lightning(this,400,300);\n</pre>\nNote that some of these functions return a group of gameobjects and others return a single gameobject. Regardless you can then add it to the state and tell it to start emitting\n\n<pre>\n  this.addChild(this.bam);\n  this.bam.startEmitting();\n</pre>",
+            "tag": "main",
+            "itemtype": "main"
+        }
+    },
+    "classes": {
+        "Kiwi.Plugins.ParticlePack1": {
+            "name": "Kiwi.Plugins.ParticlePack1",
+            "shortname": "Kiwi.Plugins.ParticlePack1",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Kiwi",
+            "submodule": "Kiwi.Plugins",
+            "namespace": "Kiwi.Plugins",
+            "file": "src\\particlepack1.js",
+            "line": 2,
+            "description": "The particle pack contains a number of game objects that you can add to a state. It depends on the ParticelsGL plugin, so make sure you have that installed as well.\nYou'll need to add the spritesheets to your preloader which will look something like this\n\n<pre>\n  MyState.preload = function() {\n    this.addSpriteSheet('particlePack1SpriteSheet', '../assets/particlepack1_128.png',128, 128, false, 8, 5, 5, 27, 27, 54, 54);\n    this.addSpriteSheet('particlePack1SpriteSheet_16', '../assets/particlepack1_16.png', 16, 16, false, 8, 5, 5, 4, 4, 8, 8);\n  };\n</pre>\n\nTo create a particle effect do one of the following (this would add the effects to x:400,y:400 within a group)\n<pre>\n  this.bam = Kiwi.Plugins.ParticlePack1.Bam(this,400,300);\n  this.boom = Kiwi.Plugins.ParticlePack1.Boom(this,400,300);\n  this.explosion = Kiwi.Plugins.ParticlePack1.Explosion(this,400,300);\n  this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);\n  this.gasfire = Kiwi.Plugins.ParticlePack1.Gasfire(this,400,300);\n  this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines(this,400,300);\n  this.kaboom = Kiwi.Plugins.ParticlePack1.Kaboom(this,400,300);\n  this.poison = Kiwi.Plugins.ParticlePack1.Poison(this,400,300);\n  this.poof = Kiwi.Plugins.ParticlePack1.Poof(this,400,300);\n  this.pow = Kiwi.Plugins.ParticlePack1.Pow(this,400,300);\n  this.smoke = Kiwi.Plugins.ParticlePack1.Smoke(this,400,300);\n  this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs(this,400,300);\n  this.stars = Kiwi.Plugins.ParticlePack1.Stars(this,400,300);\n  this.tornado = Kiwi.Plugins.ParticlePack1.Tornado(this,400,300);\n  this.zap = Kiwi.Plugins.ParticlePack1.Zap(this,400,300);\n  this.bluefire = Kiwi.Plugins.ParticlePack1.Bluefire(this,400,300);\n  this.gasleak = Kiwi.Plugins.ParticlePack1.Gasleak(this,400,300);\n  this.orangefire = Kiwi.Plugins.ParticlePack1.Orangefire(this,400,300);\n  this.redfire = Kiwi.Plugins.ParticlePack1.Redfire(this,400,300);\n  this.lightning = Kiwi.Plugins.ParticlePack1.Lightning(this,400,300);\n</pre>\nNote that some of these functions return a group of gameobjects and others return a single gameobject. Regardless you can then add it to the state and tell it to start emitting\n\n<pre>\n  this.addChild(this.bam);\n  this.bam.startEmitting();\n</pre>"
+        }
+    },
+    "classitems": [
+        {
+            "file": "src\\bam.js",
+            "line": 1,
+            "description": "ParticlePack1 Bam Effect.",
+            "itemtype": "property",
+            "name": "Bam",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\bluefire.js",
+            "line": 1,
+            "description": "ParticlePack1 Bluefire Effect.",
+            "itemtype": "property",
+            "name": "Bluefire",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\boom.js",
+            "line": 1,
+            "description": "ParticlePack1 Boom Effect.",
+            "itemtype": "property",
+            "name": "Boom",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\explosion.js",
+            "line": 1,
+            "description": "ParticlePack1 Explosion Effect.",
+            "itemtype": "property",
+            "name": "Explosion",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\fireworks.js",
+            "line": 1,
+            "description": "ParticlePack1 Fireworks Effect.",
+            "itemtype": "property",
+            "name": "Fireworks",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\gasfire.js",
+            "line": 1,
+            "description": "ParticlePack1 Gasfire Effect.",
+            "itemtype": "property",
+            "name": "Gasfire",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\gasleak.js",
+            "line": 1,
+            "description": "ParticlePack1 Gasleak Effect.",
+            "itemtype": "property",
+            "name": "Gasleak",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\hitlines.js",
+            "line": 1,
+            "description": "ParticlePack1 Hitlines Effect.",
+            "itemtype": "property",
+            "name": "Hitlines",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\kaboom.js",
+            "line": 1,
+            "description": "ParticlePack1 Kaboom Effect.",
+            "itemtype": "property",
+            "name": "Kaboom",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\lightning.js",
+            "line": 1,
+            "description": "ParticlePack1 Lightning Effect.",
+            "itemtype": "property",
+            "name": "Lightning",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\orangefire.js",
+            "line": 1,
+            "description": "ParticlePack1 Orangefire Effect.",
+            "itemtype": "property",
+            "name": "Orangefire",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "Kiwi.Plugins.ParticlePack1"
+        },
+        {
+            "file": "src\\particlepack1.js",
+            "line": 51,
+            "description": "The name of this plugin.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.ParticlePack1",
+            "module": "Kiwi",
+            "submodule": "Kiwi.Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\particlepack1.js",
+            "line": 59,
+            "description": "The version of this plugin in semver (semantic versioning) format",
+            "itemtype": "property",
+            "name": "version",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.ParticlePack1",
+            "module": "Kiwi",
+            "submodule": "Kiwi.Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\particlepack1.js",
+            "line": 67,
+            "description": "The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format",
+            "itemtype": "property",
+            "name": "minimumKiwiVersion",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.ParticlePack1",
+            "module": "Kiwi",
+            "submodule": "Kiwi.Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\particlepack1.js",
+            "line": 75,
+            "description": "Other plugins required for this plugin to run.",
+            "itemtype": "property",
+            "name": "pluginDependencies",
+            "type": "Array",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.ParticlePack1",
+            "module": "Kiwi",
+            "submodule": "Kiwi.Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\particlepack1.js",
+            "line": 93,
+            "description": "Registers this plugin with the Global Kiwi Plugins Manager if it is avaiable.",
+            "class": "Kiwi.Plugins.ParticlePack1",
+            "module": "Kiwi",
+            "submodule": "Kiwi.Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\poison.js",
+            "line": 1,
+            "description": "ParticlePack1 Poison Effect.",
+            "itemtype": "property",
+            "name": "Poison",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\poof.js",
+            "line": 1,
+            "description": "ParticlePack1 Poof Effect.",
+            "itemtype": "property",
+            "name": "Poof",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\pow.js",
+            "line": 1,
+            "description": "ParticlePack1 Pow Effect.",
+            "itemtype": "property",
+            "name": "Pow",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\redfire.js",
+            "line": 1,
+            "description": "ParticlePack1 Redfire Effect.",
+            "itemtype": "property",
+            "name": "Redfire",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\smoke.js",
+            "line": 1,
+            "description": "ParticlePack1 Smoke Effect.",
+            "itemtype": "property",
+            "name": "Smoke",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\smokepuffs.js",
+            "line": 1,
+            "description": "ParticlePack1 Smokepuffs Effect.",
+            "itemtype": "property",
+            "name": "Smokepuffs",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\stars.js",
+            "line": 1,
+            "description": "ParticlePack1 Stars Effect.",
+            "itemtype": "property",
+            "name": "Stars",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\tornado.js",
+            "line": 1,
+            "description": "ParticlePack1 Tornado Effect.",
+            "itemtype": "property",
+            "name": "Tornado",
+            "type": "Kiwi.Entity",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\zap.js",
+            "line": 1,
+            "description": "ParticlePack1 Zap Effect.",
+            "itemtype": "property",
+            "name": "Zap",
+            "type": "Kiwi.Group",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "class": "",
+            "module": "Kiwi",
+            "namespace": "Kiwi.Plugins"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nRegisters this plugin with the Global Kiwi Plugins Manager if it is avaiable.",
+            "line": " src\\particlepack1.js:93"
+        }
+    ]
+}

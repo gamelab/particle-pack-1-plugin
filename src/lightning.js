@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Lightning Effect.
+  * @property Lightning
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Lightning = function (state,x,y) { 
   this.glowConfig = {
   "numParts": 1,

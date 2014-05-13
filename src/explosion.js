@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Explosion Effect.
+  * @property Explosion
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Explosion = function (state,x,y) { 
   this.config = {
   "numParts": 20,

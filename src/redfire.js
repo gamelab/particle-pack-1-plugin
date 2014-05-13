@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Redfire Effect.
+  * @property Redfire
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Redfire = function (state,x,y) { 
   this.backConfig = {
   "numParts": 25,

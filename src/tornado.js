@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Tornado Effect.
+  * @property Tornado
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Tornado = function (state,x,y) { 
   this.config = {
   "numParts": 30,

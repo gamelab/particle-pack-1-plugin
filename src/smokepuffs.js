@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Smokepuffs Effect.
+  * @property Smokepuffs
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) { 
   this.config = {
   "numParts": 1,

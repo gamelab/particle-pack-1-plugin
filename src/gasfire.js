@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Gasfire Effect.
+  * @property Gasfire
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Gasfire = function (state,x,y) { 
   this.config = {
   "numParts": 25,

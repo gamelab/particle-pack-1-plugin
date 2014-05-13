@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Gasleak Effect.
+  * @property Gasleak
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) { 
   this.cloudsConfig = {
   "numParts": 10,

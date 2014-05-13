@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Smoke Effect.
+  * @property Smoke
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Smoke = function (state,x,y) { 
   this.config = {
   "numParts": 15,

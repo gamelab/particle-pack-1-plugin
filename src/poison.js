@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Poison Effect.
+  * @property Poison
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Poison = function (state,x,y) { 
   this.config = {
   "numParts": 5,

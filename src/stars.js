@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Stars Effect.
+  * @property Stars
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Stars = function (state,x,y) { 
   this.config = {
   "numParts": 1,

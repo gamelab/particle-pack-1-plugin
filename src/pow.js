@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Pow Effect.
+  * @property Pow
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Pow = function (state,x,y) { 
   
   this.powConfig = {

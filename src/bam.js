@@ -1,5 +1,12 @@
+/**
+  * ParticlePack1 Bam Effect.
+  * @property Bam
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Bam = function (state,x,y) { 
-  console.log (arguments)
   this.bamConfig = {
     "numParts": 1,
     "posOffsetX": 0,

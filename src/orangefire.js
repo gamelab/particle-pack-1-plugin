@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Orangefire Effect.
+  * @property Orangefire
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Orangefire = function (state,x,y) { 
   this.backConfig = {
   "numParts": 25,

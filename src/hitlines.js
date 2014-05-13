@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Hitlines Effect.
+  * @property Hitlines
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Hitlines = function (state,x,y) { 
   this.config = {
   "numParts": 3,

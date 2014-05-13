@@ -1,9 +1,16 @@
+/**
+  * ParticlePack1 Bam Effect.
+  * @property Bam
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Bam = function (state,x,y) { 
-  console.log (arguments)
   this.bamConfig = {
     "numParts": 1,
     "posOffsetX": 0,
-    "posOffsetY": 0,
+    "posOffsetY": 20,
     "posRadius": 100,
     "posRadialStart": 0,
     "posRadialEnd": 3.1419999999999995,
@@ -107,8 +114,8 @@ Kiwi.Plugins.ParticlePack1.Bam = function (state,x,y) {
   "velShape": "center",
   "velOffsetX": 0,
   "velOffsetY": -232,
-  "velAngMin": -1,
-  "velAngMax": 1,
+  "velAngMin": -5,
+  "velAngMax": 5,
   "velRadius": 55.1,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -118,7 +125,7 @@ Kiwi.Plugins.ParticlePack1.Bam = function (state,x,y) {
   "velLength": 89,
   "velRandomLine": false,
   "minStartTime": 0,
-  "maxStartTime": 0.2,
+  "maxStartTime": 0,
   "minLifespan": 0.3,
   "maxLifespan": 0.6,
   "gravityY": 0,
@@ -179,92 +186,16 @@ Kiwi.Plugins.ParticlePack1.Bam = function (state,x,y) {
   return group;
 }
 
-Kiwi.Plugins.ParticlePack1.Bluefire = function (state,x,y) { 
-  this.backConfig = {
-  "numParts": 25,
-  "posOffsetX": 0,
-  "posOffsetY": 0,
-  "posRadius": 10,
-  "posRadialStart": 0,
-  "posRadialEnd": 3.142,
-  "posWidth": 200,
-  "posHeight": 200,
-  "posConstrainRect": true,
-  "posAngle": 0,
-  "posLength": 8,
-  "posRandomLine": true,
-  "posConstrainRadial": true,
-  "posRandomRadial": true,
-  "posShape": "line",
-  "maxVel": 100,
-  "minVel": 70,
-  "velConstrainRect": true,
-  "velConstrainRadial": false,
-  "velRandomRadial": false,
-  "velShape": "point",
-  "velOffsetX": 0,
-  "velOffsetY": -120,
-  "velAngMin": 0,
-  "velAngMax": 0,
-  "velRadius": 55.1,
-  "velRadialStart": 0,
-  "velRadialEnd": 6.283185307179586,
-  "velWidth": 200,
-  "velHeight": 200,
-  "velAngle": 0,
-  "velLength": 20,
-  "velRandomLine": true,
-  "minStartTime": 0,
-  "maxStartTime": 3,
-  "minLifespan": 0.7,
-  "maxLifespan": 1.3,
-  "gravityY": 20,
-  "gravityX": 0,
-  "startSize": 100,
-  "endSize": 1,
-  "loop": true,
-  "colEnvKeyframes": [
-    0.1,
-    0.3
-  ],
-  "alpha": 0.7,
-  "colEnv0": [
-    0,
-    0.8196078431372549,
-    0.9921568627450981
-  ],
-  "colEnv1": [
-    0.047058823529411764,
-    0.36470588235294116,
-    0.984313725490196
-  ],
-  "colEnv2": [
-    0.12549019607843137,
-    0.19215686274509805,
-    0.9647058823529412
-  ],
-  "colEnv3": [
-    0.047058823529411764,
-    0.2196078431372549,
-    0.9882352941176471
-  ],
-  "alphaGradient": [
-    0,
-    1,
-    1,
-    1
-  ],
-  "alphaStops": [
-    0.3,
-    0.6
-  ],
-  "cells": [
-    1
-  ],
-  "additive": false
-}
+/**
+  * ParticlePack1 Bluefire Effect.
+  * @property Bluefire
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
 
-this.frontConfig = {
+Kiwi.Plugins.ParticlePack1.Bluefire = function (state,x,y) { 
+  this.config = {
   "numParts": 25,
   "posOffsetX": 0,
   "posOffsetY": 0,
@@ -285,9 +216,9 @@ this.frontConfig = {
   "velConstrainRect": true,
   "velConstrainRadial": false,
   "velRandomRadial": false,
-  "velShape": "point",
+  "velShape": "line",
   "velOffsetX": 0,
-  "velOffsetY": -120,
+  "velOffsetY": -180,
   "velAngMin": 0,
   "velAngMax": 0,
   "velRadius": 55.1,
@@ -296,13 +227,13 @@ this.frontConfig = {
   "velWidth": 200,
   "velHeight": 200,
   "velAngle": 0,
-  "velLength": 20,
+  "velLength": 30,
   "velRandomLine": true,
   "minStartTime": 0,
-  "maxStartTime": 3,
-  "minLifespan": 0.7,
-  "maxLifespan": 1.3,
-  "gravityY": 20,
+  "maxStartTime": 1,
+  "minLifespan": 0.5,
+  "maxLifespan": 1,
+  "gravityY": 100,
   "gravityX": 0,
   "startSize": 100,
   "endSize": 1,
@@ -333,13 +264,13 @@ this.frontConfig = {
     0.9882352941176471
   ],
   "alphaGradient": [
-    0,
+    "0",
     1,
     1,
     1
   ],
   "alphaStops": [
-    0.3,
+    "0.2",
     0.6
   ],
   "cells": [
@@ -348,17 +279,17 @@ this.frontConfig = {
   "additive": true
 }
 
-  var group = new Kiwi.Group(state)
-  group.x = x;
-  group.y = y;
-  var back = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.backConfig);
-  var front = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.frontConfig);
-  group.addChild(back);
-  group.addChild(front);
-
-  return group;
+  return new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,x,y,this.config);
 
 }
+
+/**
+  * ParticlePack1 Boom Effect.
+  * @property Boom
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Boom = function (state,x,y) { 
   
@@ -461,7 +392,7 @@ Kiwi.Plugins.ParticlePack1.Boom = function (state,x,y) {
   "posRandomLine": true,
   "posConstrainRadial": true,
   "posRandomRadial": true,
-  "posShape": "radial",
+  "posShape": "point",
   "maxVel": 802,
   "minVel": -978,
   "velConstrainRect": true,
@@ -537,11 +468,20 @@ Kiwi.Plugins.ParticlePack1.Boom = function (state,x,y) {
   group.y = y;
   var boom = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.boomConfig);
   var explosion = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.explosionConfig);
-  group.addChild(boom);
   group.addChild(explosion);
+  group.addChild(boom);
+ 
 
   return group;
 }
+
+/**
+  * ParticlePack1 Explosion Effect.
+  * @property Explosion
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Explosion = function (state,x,y) { 
   this.config = {
@@ -559,7 +499,7 @@ Kiwi.Plugins.ParticlePack1.Explosion = function (state,x,y) {
   "posRandomLine": true,
   "posConstrainRadial": true,
   "posRandomRadial": true,
-  "posShape": "radial",
+  "posShape": "point",
   "maxVel": 802,
   "minVel": -978,
   "velConstrainRect": true,
@@ -634,9 +574,17 @@ Kiwi.Plugins.ParticlePack1.Explosion = function (state,x,y) {
 
 }
 
+/**
+  * ParticlePack1 Fireworks Effect.
+  * @property Fireworks
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Fireworks = function (state,x,y) { 
   this.config = {
-  "numParts": 15,
+  "numParts": 25,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 14.1,
@@ -723,6 +671,14 @@ Kiwi.Plugins.ParticlePack1.Fireworks = function (state,x,y) {
   return new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet_16,x,y,this.config);
 
 }
+
+/**
+  * ParticlePack1 Gasfire Effect.
+  * @property Gasfire
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Gasfire = function (state,x,y) { 
   this.config = {
@@ -814,6 +770,14 @@ Kiwi.Plugins.ParticlePack1.Gasfire = function (state,x,y) {
 
 }
 
+/**
+  * ParticlePack1 Gasleak Effect.
+  * @property Gasleak
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) { 
   this.cloudsConfig = {
   "numParts": 10,
@@ -884,7 +848,7 @@ Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) {
     0.8705882352941177
   ],
   "alphaGradient": [
-    0,
+    1,
     1,
     1,
     0
@@ -901,7 +865,7 @@ Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) {
 }
 
 this.jetConfig = {
-  "numParts": 5,
+  "numParts": 6,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 100,
@@ -921,7 +885,7 @@ this.jetConfig = {
   "velConstrainRect": true,
   "velConstrainRadial": true,
   "velRandomRadial": true,
-  "velShape": "point",
+  "velShape": "line",
   "velOffsetX": 0,
   "velOffsetY": -100,
   "velAngMin": -0.2,
@@ -932,12 +896,12 @@ this.jetConfig = {
   "velWidth": 200,
   "velHeight": 200,
   "velAngle": 0,
-  "velLength": 10,
+  "velLength": 20,
   "velRandomLine": true,
   "minStartTime": 0,
   "maxStartTime": 0.6,
   "minLifespan": 0.2,
-  "maxLifespan": 1,
+  "maxLifespan": 0.5,
   "gravityX": 0,
   "gravityY": 0,
   "startSize": 50,
@@ -988,7 +952,7 @@ this.jetConfig = {
   var group = new Kiwi.Group(state)
   group.x = x;
   group.y = y;
-  var clouds = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,-30,this.cloudsConfig);
+  var clouds = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,-15,this.cloudsConfig);
   var jet = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.jetConfig);
   group.addChild(clouds);
   group.addChild(jet);
@@ -996,6 +960,14 @@ this.jetConfig = {
   return group;
 
 }
+
+/**
+  * ParticlePack1 Hitlines Effect.
+  * @property Hitlines
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Hitlines = function (state,x,y) { 
   this.config = {
@@ -1088,6 +1060,14 @@ Kiwi.Plugins.ParticlePack1.Hitlines = function (state,x,y) {
 
 }
 
+/**
+  * ParticlePack1 Kaboom Effect.
+  * @property Kaboom
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) { 
   this.kaboomConfig = {
     "numParts": 1,
@@ -1125,8 +1105,8 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) {
     "velRandomLine": true,
     "minStartTime": 0,
     "maxStartTime": 0,
-    "minLifespan": 0.6,
-    "maxLifespan": 0.6,
+    "minLifespan": 1.0,
+    "maxLifespan": 1.0,
     "gravityX": 0,
     "gravityY": 400,
     "startSize": 20,
@@ -1175,7 +1155,7 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) {
   }
 
   this.backConfig = {
-  "numParts": 20,
+  "numParts": 30,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 20,
@@ -1203,15 +1183,15 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) {
   "velRadius": 50,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
-  "velWidth": 200,
+  "velWidth": 250,
   "velHeight": 80,
   "velAngle": 0,
   "velLength": 50,
   "velRandomLine": true,
   "minStartTime": 0,
-  "maxStartTime": 0.1,
-  "minLifespan": 0.5,
-  "maxLifespan": 1.4,
+  "maxStartTime": 0.3,
+  "minLifespan": 0.7,
+  "maxLifespan": 1.0,
   "gravity": 0,
   "startSize": 10,
   "endSize": 150,
@@ -1295,8 +1275,8 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) {
   "velRandomLine": true,
   "minStartTime": 0,
   "maxStartTime": 0,
-  "minLifespan": 1.5,
-  "maxLifespan": 1.5,
+  "minLifespan": 0.7,
+  "maxLifespan": 0.7,
   "gravityX": 0,
   "gravityY": 0,
   "startSize": 100,
@@ -1346,7 +1326,7 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) {
 
 
   this.foreConfig = {
-  "numParts": 2,
+  "numParts": 3,
   "posOffsetX": 0,
   "posOffsetY": 0,
   "posRadius": 100,
@@ -1446,6 +1426,14 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) {
   group.addChild(kaboom);
   return group;
 }
+
+/**
+  * ParticlePack1 Lightning Effect.
+  * @property Lightning
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Lightning = function (state,x,y) { 
   this.glowConfig = {
@@ -1803,6 +1791,14 @@ this.sparksConfig = {
 
 }
 
+/**
+  * ParticlePack1 Orangefire Effect.
+  * @property Orangefire
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Orangefire = function (state,x,y) { 
   this.backConfig = {
   "numParts": 25,
@@ -1986,10 +1982,48 @@ this.frontConfig = {
 
 
 /**
-* The description of ParticlePack1 goes here
-*
+* The particle pack contains a number of game objects that you can add to a state. It depends on the ParticelsGL plugin, so make sure you have that installed as well.
+* You'll need to add the spritesheets to your preloader which will look something like this
+* 
+* <pre>
+*   MyState.preload = function() {
+*     this.addSpriteSheet('particlePack1SpriteSheet', '../assets/particlepack1_128.png',128, 128, false, 8, 5, 5, 27, 27, 54, 54);
+*     this.addSpriteSheet('particlePack1SpriteSheet_16', '../assets/particlepack1_16.png', 16, 16, false, 8, 5, 5, 4, 4, 8, 8);
+*   };
+* </pre>
+* 
+* To create a particle effect do one of the following (this would add the effects to x:400,y:400 within a group)
+* <pre>
+*   this.bam = Kiwi.Plugins.ParticlePack1.Bam(this,400,300);
+*   this.boom = Kiwi.Plugins.ParticlePack1.Boom(this,400,300);
+*   this.explosion = Kiwi.Plugins.ParticlePack1.Explosion(this,400,300);
+*   this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);
+*   this.gasfire = Kiwi.Plugins.ParticlePack1.Gasfire(this,400,300);
+*   this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines(this,400,300);
+*   this.kaboom = Kiwi.Plugins.ParticlePack1.Kaboom(this,400,300);
+*   this.poison = Kiwi.Plugins.ParticlePack1.Poison(this,400,300);
+*   this.poof = Kiwi.Plugins.ParticlePack1.Poof(this,400,300);
+*   this.pow = Kiwi.Plugins.ParticlePack1.Pow(this,400,300);
+*   this.smoke = Kiwi.Plugins.ParticlePack1.Smoke(this,400,300);
+*   this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs(this,400,300);
+*   this.stars = Kiwi.Plugins.ParticlePack1.Stars(this,400,300);
+*   this.tornado = Kiwi.Plugins.ParticlePack1.Tornado(this,400,300);
+*   this.zap = Kiwi.Plugins.ParticlePack1.Zap(this,400,300);
+*   this.bluefire = Kiwi.Plugins.ParticlePack1.Bluefire(this,400,300);
+*   this.gasleak = Kiwi.Plugins.ParticlePack1.Gasleak(this,400,300);
+*   this.orangefire = Kiwi.Plugins.ParticlePack1.Orangefire(this,400,300);
+*   this.redfire = Kiwi.Plugins.ParticlePack1.Redfire(this,400,300);
+*   this.lightning = Kiwi.Plugins.ParticlePack1.Lightning(this,400,300);
+* </pre>
+* Note that some of these functions return a group of gameobjects and others return a single gameobject. Regardless you can then add it to the state and tell it to start emitting
+* 
+* <pre>
+*   this.addChild(this.bam);
+*   this.bam.startEmitting();
+* </pre>
+* 
 * @module Kiwi
-* @submodule Plugins
+* @submodule Kiwi.Plugins
 * @namespace Kiwi.Plugins
 * @class ParticlePack1
 * @main
@@ -2005,15 +2039,27 @@ Kiwi.Plugins.ParticlePack1 = {
   name:'ParticlePack1',
 
   /**
-  * The version of this plugin.
+  * The version of this plugin in semver (semantic versioning) format
   * @property version
   * @type String
   * @public
   */
   version:'0.1.0',
 
+  /**
+  * The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format
+  * @property minimumKiwiVersion
+  * @type String
+  * @public
+  */
   minimumKiwiVersion:'0.7.0',
 
+  /**
+  * Other plugins required for this plugin to run. 
+  * @property pluginDependencies
+  * @type Array
+  * @public
+  */
   pluginDependencies: [
     {
       name:'ParticlesGL',
@@ -2036,6 +2082,14 @@ Kiwi.PluginManager.register(Kiwi.Plugins.ParticlePack1);
  
 
  
+
+/**
+  * ParticlePack1 Poison Effect.
+  * @property Poison
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Poison = function (state,x,y) { 
   this.config = {
@@ -2126,6 +2180,14 @@ Kiwi.Plugins.ParticlePack1.Poison = function (state,x,y) {
 
 }
 
+/**
+  * ParticlePack1 Poof Effect.
+  * @property Poof
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) { 
   this.poofConfig = {
   "numParts": 1,
@@ -2150,9 +2212,9 @@ Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) {
   "velRandomRadial": true,
   "velShape": "point",
   "velOffsetX": 0,
-  "velOffsetY": -150,
-  "velAngMin": 0,
-  "velAngMax": 0,
+  "velOffsetY": -120,
+  "velAngMin": -0.3,
+  "velAngMax": 0.7,
   "velRadius": 200,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -2196,7 +2258,7 @@ Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) {
     1
   ],
   "alphaGradient": [
-    "0",
+    "1",
     1,
     1,
     0
@@ -2236,8 +2298,8 @@ this.smokepuffsConfig = {
   "velShape": "center",
   "velOffsetX": 0,
   "velOffsetY": -232,
-  "velAngMin": -1,
-  "velAngMax": 1,
+  "velAngMin": -3,
+  "velAngMax": 3,
   "velRadius": 55.1,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -2247,13 +2309,13 @@ this.smokepuffsConfig = {
   "velLength": 89,
   "velRandomLine": false,
   "minStartTime": 0,
-  "maxStartTime": 0.2,
-  "minLifespan": 0.3,
-  "maxLifespan": 0.6,
+  "maxStartTime": 0,
+  "minLifespan": 0.4,
+  "maxLifespan": 0.4,
   "gravityY": 0,
   "gravityX": 0,
-  "startSize": 1,
-  "endSize": 185,
+  "startSize": 70,
+  "endSize": 180,
   "loop": false,
   "colEnvKeyframes": [
     "0.3",
@@ -2261,14 +2323,14 @@ this.smokepuffsConfig = {
   ],
   "alpha": 1,
   "colEnv0": [
-    1,
-    0.48627450980392156,
-    0.058823529411764705
+    0.5725490196078431,
+    0.796078431372549,
+    0.9921568627450981
   ],
   "colEnv1": [
-    0.9921568627450981,
-    0.8705882352941177,
-    0.07450980392156863
+    0.6862745098039216,
+    0.8313725490196079,
+    0.9921568627450981
   ],
   "colEnv2": [
     0.996078431372549,
@@ -2276,9 +2338,9 @@ this.smokepuffsConfig = {
     0.9529411764705882
   ],
   "colEnv3": [
-    0.9137254901960784,
-    0.7686274509803922,
-    0
+    0.7607843137254902,
+    0.807843137254902,
+    0.9137254901960784
   ],
   "alphaGradient": [
     "0",
@@ -2287,7 +2349,7 @@ this.smokepuffsConfig = {
     0
   ],
   "alphaStops": [
-    0.3,
+    "0.2",
     0.7
   ],
   "cells": [
@@ -2306,6 +2368,14 @@ this.smokepuffsConfig = {
 
   return group;
 }
+
+/**
+  * ParticlePack1 Pow Effect.
+  * @property Pow
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Pow = function (state,x,y) { 
   
@@ -2333,8 +2403,8 @@ Kiwi.Plugins.ParticlePack1.Pow = function (state,x,y) {
   "velShape": "point",
   "velOffsetX": 0,
   "velOffsetY": -150,
-  "velAngMin": 0,
-  "velAngMax": 0,
+  "velAngMin": -0.5,
+  "velAngMax": 0.7,
   "velRadius": 200,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -2489,6 +2559,14 @@ Kiwi.Plugins.ParticlePack1.Pow = function (state,x,y) {
 
   return group;
 }
+
+/**
+  * ParticlePack1 Redfire Effect.
+  * @property Redfire
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Redfire = function (state,x,y) { 
   this.backConfig = {
@@ -2672,6 +2750,14 @@ this.frontConfig = {
 
 }
 
+/**
+  * ParticlePack1 Smoke Effect.
+  * @property Smoke
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Smoke = function (state,x,y) { 
   this.config = {
   "numParts": 15,
@@ -2708,8 +2794,8 @@ Kiwi.Plugins.ParticlePack1.Smoke = function (state,x,y) {
   "velLength": 50,
   "velRandomLine": true,
   "minStartTime": 0,
-  "maxStartTime": 3,
-  "minLifespan": 1,
+  "maxStartTime": 2,
+  "minLifespan": 0.5,
   "maxLifespan": 2,
   "gravityY": 0,
   "gravityX": 0,
@@ -2761,6 +2847,14 @@ Kiwi.Plugins.ParticlePack1.Smoke = function (state,x,y) {
 
 }
 
+/**
+  * ParticlePack1 Smokepuffs Effect.
+  * @property Smokepuffs
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) { 
   this.config = {
   "numParts": 1,
@@ -2786,8 +2880,8 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) {
   "velShape": "center",
   "velOffsetX": 0,
   "velOffsetY": -232,
-  "velAngMin": -1,
-  "velAngMax": 1,
+  "velAngMin": -3,
+  "velAngMax": 3,
   "velRadius": 55.1,
   "velRadialStart": 0,
   "velRadialEnd": 6.283185307179586,
@@ -2797,13 +2891,13 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) {
   "velLength": 89,
   "velRandomLine": false,
   "minStartTime": 0,
-  "maxStartTime": 0.2,
-  "minLifespan": 0.3,
-  "maxLifespan": 0.6,
+  "maxStartTime": 0,
+  "minLifespan": 0.4,
+  "maxLifespan": 0.4,
   "gravityY": 0,
   "gravityX": 0,
-  "startSize": 1,
-  "endSize": 185,
+  "startSize": 70,
+  "endSize": 180,
   "loop": false,
   "colEnvKeyframes": [
     "0.3",
@@ -2811,14 +2905,14 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) {
   ],
   "alpha": 1,
   "colEnv0": [
-    1,
-    0.48627450980392156,
-    0.058823529411764705
+    0.5725490196078431,
+    0.796078431372549,
+    0.9921568627450981
   ],
   "colEnv1": [
-    0.9921568627450981,
-    0.8705882352941177,
-    0.07450980392156863
+    0.6862745098039216,
+    0.8313725490196079,
+    0.9921568627450981
   ],
   "colEnv2": [
     0.996078431372549,
@@ -2826,9 +2920,9 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) {
     0.9529411764705882
   ],
   "colEnv3": [
-    0.9137254901960784,
-    0.7686274509803922,
-    0
+    0.7607843137254902,
+    0.807843137254902,
+    0.9137254901960784
   ],
   "alphaGradient": [
     "0",
@@ -2837,7 +2931,7 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) {
     0
   ],
   "alphaStops": [
-    0.3,
+    "0.2",
     0.7
   ],
   "cells": [
@@ -2849,6 +2943,14 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function (state,x,y) {
   return new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,x,y,this.config);
 
 }
+
+/**
+  * ParticlePack1 Stars Effect.
+  * @property Stars
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Stars = function (state,x,y) { 
   this.config = {
@@ -2940,6 +3042,14 @@ Kiwi.Plugins.ParticlePack1.Stars = function (state,x,y) {
 
 }
 
+/**
+  * ParticlePack1 Tornado Effect.
+  * @property Tornado
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Tornado = function (state,x,y) { 
   this.config = {
   "numParts": 30,
@@ -3029,6 +3139,14 @@ Kiwi.Plugins.ParticlePack1.Tornado = function (state,x,y) {
   return new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,x,y,this.config);
 
 }
+
+/**
+  * ParticlePack1 Zap Effect.
+  * @property Zap
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
 
 Kiwi.Plugins.ParticlePack1.Zap = function (state,x,y) { 
   this.zapConfig = {

@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Bluefire Effect.
+  * @property Bluefire
+  * @type Kiwi.Entity
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Bluefire = function (state,x,y) { 
   this.config = {
   "numParts": 25,

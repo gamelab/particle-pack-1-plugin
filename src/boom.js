@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Boom Effect.
+  * @property Boom
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Boom = function (state,x,y) { 
   
   this.boomConfig = {

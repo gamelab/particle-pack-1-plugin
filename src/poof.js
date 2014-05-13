@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Poof Effect.
+  * @property Poof
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) { 
   this.poofConfig = {
   "numParts": 1,

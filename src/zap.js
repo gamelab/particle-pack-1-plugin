@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Zap Effect.
+  * @property Zap
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Zap = function (state,x,y) { 
   this.zapConfig = {
   "numParts": 1,

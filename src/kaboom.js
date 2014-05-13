@@ -1,3 +1,11 @@
+/**
+  * ParticlePack1 Kaboom Effect.
+  * @property Kaboom
+  * @type Kiwi.Group
+  * @public
+  * @static
+*/
+
 Kiwi.Plugins.ParticlePack1.Kaboom = function (state,x,y) { 
   this.kaboomConfig = {
     "numParts": 1,
