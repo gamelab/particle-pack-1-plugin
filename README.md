@@ -78,8 +78,8 @@ The particle pack contains a number of game objects that you can add to a state.
 You'll need to add the spritesheets to your preloader which will look something like this
 
 	MyState.preload = function() {
-		this.addSpriteSheet('particlePack1SpriteSheet', '../assets/particlepack1_128.png',128, 128, true, 8, 5, 5, 27, 27, 54, 54);
-		this.addSpriteSheet('particlePack1SpriteSheet_16', '../assets/particlepack1_16.png', 16, 16, true, 8, 5, 5, 4, 4, 8, 8);
+		this.addSpriteSheet('particlePack1SpriteSheet', 'assets/particlepack1_128.png',128, 128, true, 8, 5, 5, 27, 27, 54, 54);
+		this.addSpriteSheet('particlePack1SpriteSheet_16', 'assets/particlepack1_16.png', 16, 16, true, 8, 5, 5, 4, 4, 8, 8);
 	};
 
 To create a particle effect add the following to your create function (this would add the effect to x:400,y:400)
@@ -103,13 +103,13 @@ Single effects (These return a single particle gameobject)
 	this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines(this,400,300);
 	this.smoke = Kiwi.Plugins.ParticlePack1.Smoke(this,400,300);
 	this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs(this,400,300);
+	this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);
 	
 
 Group effects (These return a group of gameobjects)
 
 	this.bam = Kiwi.Plugins.ParticlePack1.Bam(this,400,300);
 	this.boom = Kiwi.Plugins.ParticlePack1.Boom(this,400,300);
-	this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);
 	this.kaboom = Kiwi.Plugins.ParticlePack1.Kaboom(this,400,300);
 	this.poof = Kiwi.Plugins.ParticlePack1.Poof(this,400,300);
 	this.pow = Kiwi.Plugins.ParticlePack1.Pow(this,400,300);
