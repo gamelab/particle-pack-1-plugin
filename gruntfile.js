@@ -23,14 +23,14 @@ module.exports = function(grunt) {
     uglify: {
             build: {
                 files: {
-                '<%= pkg.filenameBase %>-<%= pkg.version %>.min.js': ['<%= pkg.main %>']
+                '<%= pkg.filenameBase %>-<%= pkg.version %>.min.js': ['<%= pkg.main %>**/*.js']
             }
         }
     },
  
     concat: {
           build: {
-            src:['src/*'],
+            src:['src/**/*.js'],
             dest: '<%= pkg.filenameBase %>-<%= pkg.version %>.js'
           }
     },
