@@ -70,7 +70,7 @@ You'll need to tell you game that it intends to use the plugins by adding their 
 ##How to use
 --------------------------------------------------
 
-Check out the example found in the "examples" folder of this repository.
+Check out the example found in the "examples" folder of this repository. View the source and run the examples. (You'll need a webserver to view the example - tip running 'grunt serve' in the root folder will bring up a webserver on localhost:9000)
 Read tha API docs found in the "docs" folder of this repository.
 [Look at the tutorials on the Kiwijs.org website.](Something)
 

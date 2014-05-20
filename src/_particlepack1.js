@@ -41,7 +41,7 @@ Kiwi.Plugins.ParticlePack1 = {
   pluginDependencies: [
     {
       name:'ParticlesGL',
-      minimumVersion:'0.9.0'
+      minimumVersion:'1.0.0'
     }
 
   ]
