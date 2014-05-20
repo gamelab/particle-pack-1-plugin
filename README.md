@@ -12,7 +12,7 @@ Author: Kiwi.js Team
 
 Website: www.kiwijs.org
 
-KiwiJS last version tested: 0.7.0
+KiwiJS last version tested: 1.0.0
 
 Tutorials for this plugin can be found on the Kiwi.JS website here:
 

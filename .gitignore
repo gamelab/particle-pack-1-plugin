@@ -24,7 +24,7 @@ Thumbs.db
 *.orig
 
 #bower_components/*
-#node_modules/*
+node_modules/*
 /obj/debug/*
 *.map
 *.config
