@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src\particlepack1.js - ParticlePack1</title>
+    <title>src\_particlepack1.js - ParticlePack1</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 0.1.0</em>
+            <em>API Docs for: 1.0.0</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -86,52 +86,12 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src\particlepack1.js</h1>
+                        <h1 class="file-heading">File: src\_particlepack1.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
-
 /**
-* The particle pack contains a number of game objects that you can add to a state. It depends on the ParticelsGL plugin, so make sure you have that installed as well.
-* You&#x27;ll need to add the spritesheets to your preloader which will look something like this
-* 
-* &lt;pre&gt;
-*   MyState.preload = function() {
-*     this.addSpriteSheet(&#x27;particlePack1SpriteSheet&#x27;, &#x27;../assets/particlepack1_128.png&#x27;,128, 128, false, 8, 5, 5, 27, 27, 54, 54);
-*     this.addSpriteSheet(&#x27;particlePack1SpriteSheet_16&#x27;, &#x27;../assets/particlepack1_16.png&#x27;, 16, 16, false, 8, 5, 5, 4, 4, 8, 8);
-*   };
-* &lt;/pre&gt;
-* 
-* To create a particle effect do one of the following (this would add the effects to x:400,y:400 within a group)
-* &lt;pre&gt;
-*   this.bam = Kiwi.Plugins.ParticlePack1.Bam(this,400,300);
-*   this.boom = Kiwi.Plugins.ParticlePack1.Boom(this,400,300);
-*   this.explosion = Kiwi.Plugins.ParticlePack1.Explosion(this,400,300);
-*   this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);
-*   this.gasfire = Kiwi.Plugins.ParticlePack1.Gasfire(this,400,300);
-*   this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines(this,400,300);
-*   this.kaboom = Kiwi.Plugins.ParticlePack1.Kaboom(this,400,300);
-*   this.poison = Kiwi.Plugins.ParticlePack1.Poison(this,400,300);
-*   this.poof = Kiwi.Plugins.ParticlePack1.Poof(this,400,300);
-*   this.pow = Kiwi.Plugins.ParticlePack1.Pow(this,400,300);
-*   this.smoke = Kiwi.Plugins.ParticlePack1.Smoke(this,400,300);
-*   this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs(this,400,300);
-*   this.stars = Kiwi.Plugins.ParticlePack1.Stars(this,400,300);
-*   this.tornado = Kiwi.Plugins.ParticlePack1.Tornado(this,400,300);
-*   this.zap = Kiwi.Plugins.ParticlePack1.Zap(this,400,300);
-*   this.bluefire = Kiwi.Plugins.ParticlePack1.Bluefire(this,400,300);
-*   this.gasleak = Kiwi.Plugins.ParticlePack1.Gasleak(this,400,300);
-*   this.orangefire = Kiwi.Plugins.ParticlePack1.Orangefire(this,400,300);
-*   this.redfire = Kiwi.Plugins.ParticlePack1.Redfire(this,400,300);
-*   this.lightning = Kiwi.Plugins.ParticlePack1.Lightning(this,400,300);
-* &lt;/pre&gt;
-* Note that some of these functions return a group of gameobjects and others return a single gameobject. Regardless you can then add it to the state and tell it to start emitting
-* 
-* &lt;pre&gt;
-*   this.addChild(this.bam);
-*   this.bam.startEmitting();
-* &lt;/pre&gt;
-* 
+* For a walkthrough on setting up the particle pack plugin check the &lt;a href=&quot;https://github.com/gamelab/particle-pack-1-plugin/blob/master/README.md&quot;&gt;&lt;README./a&gt;
 * @module Kiwi
 * @submodule Kiwi.Plugins
 * @namespace Kiwi.Plugins
@@ -154,7 +114,7 @@ Kiwi.Plugins.ParticlePack1 = {
   * @type String
   * @public
   */
-  version:&#x27;0.1.0&#x27;,
+  version:&#x27;1.0.0&#x27;,
 
   /**
   * The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format
@@ -173,7 +133,7 @@ Kiwi.Plugins.ParticlePack1 = {
   pluginDependencies: [
     {
       name:&#x27;ParticlesGL&#x27;,
-      minimumVersion:&#x27;0.9.0&#x27;
+      minimumVersion:&#x27;1.0.0&#x27;
     }
 
   ]

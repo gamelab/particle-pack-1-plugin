@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 0.1.0</em>
+            <em>API Docs for: 1.0.0</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -94,7 +94,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/src_particlepack1.js.html#l2"><code>src\particlepack1.js:2</code></a>
+            Defined in: <a href="../files/src__particlepack1.js.html#l1"><code>src\_particlepack1.js:1</code></a>
         </div>
     
 
@@ -111,44 +111,8 @@
 
 
 <div class="box intro">
-    <p>The particle pack contains a number of game objects that you can add to a state. It depends on the ParticelsGL plugin, so make sure you have that installed as well.
-You&#39;ll need to add the spritesheets to your preloader which will look something like this</p>
-<pre>
-  MyState.preload = function() {
-    this.addSpriteSheet('particlePack1SpriteSheet', '../assets/particlepack1_128.png',128, 128, false, 8, 5, 5, 27, 27, 54, 54);
-    this.addSpriteSheet('particlePack1SpriteSheet_16', '../assets/particlepack1_16.png', 16, 16, false, 8, 5, 5, 4, 4, 8, 8);
-  };
-</pre>
+    <p>For a walkthrough on setting up the particle pack plugin check the <a href="https://github.com/gamelab/particle-pack-1-plugin/blob/master/README.md"><README./a></p>
 
-<p>To create a particle effect do one of the following (this would add the effects to x:400,y:400 within a group)</p>
-<pre>
-  this.bam = Kiwi.Plugins.ParticlePack1.Bam(this,400,300);
-  this.boom = Kiwi.Plugins.ParticlePack1.Boom(this,400,300);
-  this.explosion = Kiwi.Plugins.ParticlePack1.Explosion(this,400,300);
-  this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks(this,400,300);
-  this.gasfire = Kiwi.Plugins.ParticlePack1.Gasfire(this,400,300);
-  this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines(this,400,300);
-  this.kaboom = Kiwi.Plugins.ParticlePack1.Kaboom(this,400,300);
-  this.poison = Kiwi.Plugins.ParticlePack1.Poison(this,400,300);
-  this.poof = Kiwi.Plugins.ParticlePack1.Poof(this,400,300);
-  this.pow = Kiwi.Plugins.ParticlePack1.Pow(this,400,300);
-  this.smoke = Kiwi.Plugins.ParticlePack1.Smoke(this,400,300);
-  this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs(this,400,300);
-  this.stars = Kiwi.Plugins.ParticlePack1.Stars(this,400,300);
-  this.tornado = Kiwi.Plugins.ParticlePack1.Tornado(this,400,300);
-  this.zap = Kiwi.Plugins.ParticlePack1.Zap(this,400,300);
-  this.bluefire = Kiwi.Plugins.ParticlePack1.Bluefire(this,400,300);
-  this.gasleak = Kiwi.Plugins.ParticlePack1.Gasleak(this,400,300);
-  this.orangefire = Kiwi.Plugins.ParticlePack1.Orangefire(this,400,300);
-  this.redfire = Kiwi.Plugins.ParticlePack1.Redfire(this,400,300);
-  this.lightning = Kiwi.Plugins.ParticlePack1.Lightning(this,400,300);
-</pre>
-Note that some of these functions return a group of gameobjects and others return a single gameobject. Regardless you can then add it to the state and tell it to start emitting
-
-<pre>
-  this.addChild(this.bam);
-  this.bam.startEmitting();
-</pre>
 </div>
 
 
@@ -178,96 +142,6 @@ Note that some of these functions return a group of gameobjects and others retur
                     <ul class="index-list properties">
                         
                             <li class="index-item property public">
-                                <a href="#property_Bam">Bam</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Bluefire">Bluefire</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Boom">Boom</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Explosion">Explosion</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Fireworks">Fireworks</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Gasfire">Gasfire</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Gasleak">Gasleak</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Hitlines">Hitlines</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Kaboom">Kaboom</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Lightning">Lightning</a>
-
-                                
-                                    <span class="flag static">static</span>
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
                                 <a href="#property_minimumKiwiVersion">minimumKiwiVersion</a>
 
                                 
@@ -277,15 +151,6 @@ Note that some of these functions return a group of gameobjects and others retur
                             <li class="index-item property public">
                                 <a href="#property_name">name</a>
 
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property public">
-                                <a href="#property_Orangefire">Orangefire</a>
-
-                                
-                                    <span class="flag static">static</span>
                                 
                                 
                             </li>
@@ -320,496 +185,6 @@ Note that some of these functions return a group of gameobjects and others retur
                 <h2 class="off-left">Properties</h2>
 
                 
-                    <div id="property_Bam" class="property item public">
-    <h3 class="name"><code>Bam</code></h3>
-    <span class="type">Kiwi.Group</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_bam.js.html#l1"><code>src\bam.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Bam Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Bluefire" class="property item public">
-    <h3 class="name"><code>Bluefire</code></h3>
-    <span class="type">Kiwi.Entity</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_bluefire.js.html#l1"><code>src\bluefire.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Bluefire Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Boom" class="property item public">
-    <h3 class="name"><code>Boom</code></h3>
-    <span class="type">Kiwi.Group</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_boom.js.html#l1"><code>src\boom.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Boom Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Explosion" class="property item public">
-    <h3 class="name"><code>Explosion</code></h3>
-    <span class="type">Kiwi.Entity</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_explosion.js.html#l1"><code>src\explosion.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Explosion Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Fireworks" class="property item public">
-    <h3 class="name"><code>Fireworks</code></h3>
-    <span class="type">Kiwi.Entity</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_fireworks.js.html#l1"><code>src\fireworks.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Fireworks Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Gasfire" class="property item public">
-    <h3 class="name"><code>Gasfire</code></h3>
-    <span class="type">Kiwi.Entity</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_gasfire.js.html#l1"><code>src\gasfire.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Gasfire Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Gasleak" class="property item public">
-    <h3 class="name"><code>Gasleak</code></h3>
-    <span class="type">Kiwi.Group</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_gasleak.js.html#l1"><code>src\gasleak.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Gasleak Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Hitlines" class="property item public">
-    <h3 class="name"><code>Hitlines</code></h3>
-    <span class="type">Kiwi.Entity</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_hitlines.js.html#l1"><code>src\hitlines.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Hitlines Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Kaboom" class="property item public">
-    <h3 class="name"><code>Kaboom</code></h3>
-    <span class="type">Kiwi.Group</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_kaboom.js.html#l1"><code>src\kaboom.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Kaboom Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Lightning" class="property item public">
-    <h3 class="name"><code>Lightning</code></h3>
-    <span class="type">Kiwi.Group</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_lightning.js.html#l1"><code>src\lightning.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Lightning Effect.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
                     <div id="property_minimumKiwiVersion" class="property item public">
     <h3 class="name"><code>minimumKiwiVersion</code></h3>
     <span class="type">String</span>
@@ -835,7 +210,7 @@ Note that some of these functions return a group of gameobjects and others retur
             
         
         
-        <a href="../files/src_particlepack1.js.html#l67"><code>src\particlepack1.js:67</code></a>
+        <a href="../files/src__particlepack1.js.html#l27"><code>src\_particlepack1.js:27</code></a>
         
         </p>
 
@@ -882,7 +257,7 @@ Note that some of these functions return a group of gameobjects and others retur
             
         
         
-        <a href="../files/src_particlepack1.js.html#l51"><code>src\particlepack1.js:51</code></a>
+        <a href="../files/src__particlepack1.js.html#l11"><code>src\_particlepack1.js:11</code></a>
         
         </p>
 
@@ -893,55 +268,6 @@ Note that some of these functions return a group of gameobjects and others retur
 
     <div class="description">
         <p>The name of this plugin.</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_Orangefire" class="property item public">
-    <h3 class="name"><code>Orangefire</code></h3>
-    <span class="type">Kiwi.Group</span>
-
-    
-
-    
-        <span class="flag public">public</span>
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/src_orangefire.js.html#l1"><code>src\orangefire.js:1</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>ParticlePack1 Orangefire Effect.</p>
 
     </div>
 
@@ -978,7 +304,7 @@ Note that some of these functions return a group of gameobjects and others retur
             
         
         
-        <a href="../files/src_particlepack1.js.html#l75"><code>src\particlepack1.js:75</code></a>
+        <a href="../files/src__particlepack1.js.html#l35"><code>src\_particlepack1.js:35</code></a>
         
         </p>
 
@@ -1025,7 +351,7 @@ Note that some of these functions return a group of gameobjects and others retur
             
         
         
-        <a href="../files/src_particlepack1.js.html#l59"><code>src\particlepack1.js:59</code></a>
+        <a href="../files/src__particlepack1.js.html#l19"><code>src\_particlepack1.js:19</code></a>
         
         </p>
 
