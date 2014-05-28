@@ -5,11 +5,11 @@
     "description": "Kiwi.js WebGL Cartoon Particles - ParticlePack1.",
     "author": {
         "name" : "GameLab",
-        "email" : ""
+        "email" : "support@kiwijs.org"
         },
 
     "homepage": "http://kiwijs.org/",
-    "bugs": "",
+    "bugs": "support@kiwijs.org",
     "license": "MIT",
     "licenseUrl": "",
 

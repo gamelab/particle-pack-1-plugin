@@ -36,7 +36,7 @@ If you have any problems then feel free to contact us via the http://www.kiwijs.
 ##Dependencies
 ----------------------------------------------------------------------------------------
 - Kiwi.js version 1.0.0 or greater
-- ParticlesGL version 1.0.0 or greater
+- ParticlesGL version 1.0.2 or greater
 
 ##How to Include: 
 ----------------------------------------------------------------------------------------
