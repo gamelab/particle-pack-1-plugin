@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
 
 		concat: {
 			build: {
-				src:[ "src/**/*.js" ],
+				src: [ "src/**/*.js" ],
 				dest: "<%= pkg.filenameBase %>-<%= pkg.version %>.js"
 			}
 		},
@@ -54,20 +54,20 @@ module.exports = function( grunt ) {
 				quotmark: "double"
 			}
 		}
-} );
+	});
 
 	grunt.loadNpmTasks( "grunt-contrib-uglify" );
 	grunt.loadNpmTasks( "grunt-contrib-yuidoc" );
 	grunt.loadNpmTasks( "grunt-contrib-concat" );
 	grunt.loadNpmTasks( "grunt-contrib-connect" );
 	grunt.loadNpmTasks( "grunt-contrib-jshint" );
-	
+
 	grunt.registerTask( "default", [
 		"jshint",
-		"uglify:build",
-		"concat:build"
-		] );
-	
+		"concat:build",
+		"uglify:build"
+		]);
+
 	grunt.registerTask( "full", [
 		"jshint",
 		"concat:build",

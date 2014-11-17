@@ -56,8 +56,11 @@ Kiwi.PluginManager.register( Kiwi.Plugins.ParticlePack1 );
 
 /**
 * ParticlePack1 Bam Effect.
-* @property Bam
-* @type Kiwi.Group
+* @method Bam
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -246,8 +249,11 @@ Kiwi.Plugins.ParticlePack1.Bam = function( state, x, y ) {
 
 /**
 * ParticlePack1 Bluefire Effect.
-* @property Bluefire
-* @type Kiwi.Entity
+* @method Bluefire
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -343,8 +349,11 @@ Kiwi.Plugins.ParticlePack1.Bluefire = function( state, x, y ) {
 
 /**
 * ParticlePack1 Boom Effect.
-* @property Boom
-* @type Kiwi.Group
+* @method Boom
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -537,8 +546,11 @@ Kiwi.Plugins.ParticlePack1.Boom = function( state, x, y ) {
 
 /**
 * ParticlePack1 Explosion Effect.
-* @property Explosion
-* @type Kiwi.Entity
+* @method Explosion
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -636,8 +648,11 @@ Kiwi.Plugins.ParticlePack1.Explosion = function( state, x, y ) {
 
 /**
 * ParticlePack1 Fireworks Effect.
-* @property Fireworks
-* @type Kiwi.Entity
+* @method Fireworks
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -734,8 +749,11 @@ Kiwi.Plugins.ParticlePack1.Fireworks = function( state, x, y ) {
 
 /**
 * ParticlePack1 Gasfire Effect.
-* @property Gasfire
-* @type Kiwi.Entity
+* @method Gasfire
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -832,8 +850,11 @@ Kiwi.Plugins.ParticlePack1.Gasfire = function( state, x, y ) {
 
 /**
 * ParticlePack1 Gasleak Effect.
-* @property Gasleak
-* @type Kiwi.Group
+* @method Gasleak
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -1023,8 +1044,11 @@ Kiwi.Plugins.ParticlePack1.Gasleak = function( state, x, y ) {
 
 /**
 * ParticlePack1 Hitlines Effect.
-* @property Hitlines
-* @type Kiwi.Entity
+* @method Hitlines
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -1122,8 +1146,11 @@ Kiwi.Plugins.ParticlePack1.Hitlines = function( state, x, y ) {
 
 /**
 * ParticlePack1 Kaboom Effect.
-* @property Kaboom
-* @type Kiwi.Group
+* @method Kaboom
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -1492,8 +1519,11 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 
 /**
 * ParticlePack1 Lightning Effect.
-* @property Lightning
-* @type Kiwi.Group
+* @method Lightning
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -1860,8 +1890,11 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 
 /**
 * ParticlePack1 Orangefire Effect.
-* @property Orangefire
-* @type Kiwi.Group
+* @method Orangefire
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -2052,8 +2085,11 @@ Kiwi.Plugins.ParticlePack1.Orangefire = function( state, x, y ) {
 
 /**
 * ParticlePack1 Poison Effect.
-* @property Poison
-* @type Kiwi.Entity
+* @method Poison
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -2149,8 +2185,11 @@ Kiwi.Plugins.ParticlePack1.Poison = function( state, x, y ) {
 
 /**
 * ParticlePack1 Poof Effect.
-* @property Poof
-* @type Kiwi.Group
+* @method Poof
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -2342,8 +2381,11 @@ Kiwi.Plugins.ParticlePack1.Poof = function ( state, x, y ) {
 
 /**
 * ParticlePack1 Pow Effect.
-* @property Pow
-* @type Kiwi.Group
+* @method Pow
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -2538,8 +2580,11 @@ Kiwi.Plugins.ParticlePack1.Pow = function( state, x, y ) {
 
 /**
 * ParticlePack1 Redfire Effect.
-* @property Redfire
-* @type Kiwi.Group
+* @method Redfire
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -2731,8 +2776,11 @@ Kiwi.Plugins.ParticlePack1.Redfire = function( state, x, y ) {
 
 /**
 * ParticlePack1 Smoke Effect.
-* @property Smoke
-* @type Kiwi.Entity
+* @method Smoke
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -2829,8 +2877,11 @@ Kiwi.Plugins.ParticlePack1.Smoke = function( state, x, y ) {
 
 /**
 * ParticlePack1 Smokepuffs Effect.
-* @property Smokepuffs
-* @type Kiwi.Group
+* @method Smokepuffs
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
@@ -2926,8 +2977,11 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function( state, x, y ) {
 
 /**
 * ParticlePack1 Stars Effect.
-* @property Stars
-* @type Kiwi.Entity
+* @method Stars
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -3024,8 +3078,11 @@ Kiwi.Plugins.ParticlePack1.Stars = function ( state, x, y ) {
 
 /**
 * ParticlePack1 Tornado Effect.
-* @property Tornado
-* @type Kiwi.Entity
+* @method Tornado
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Entity
 * @public
 * @static
 */
@@ -3122,8 +3179,11 @@ Kiwi.Plugins.ParticlePack1.Tornado = function (state,x,y) {
 
 /**
 * ParticlePack1 Zap Effect.
-* @property Zap
-* @type Kiwi.Group
+* @method Zap
+* @param state {Kiwi.State} Current state
+* @param x {Number} X position
+* @param y {Number} Y position
+* @return Kiwi.Group
 * @public
 * @static
 */
