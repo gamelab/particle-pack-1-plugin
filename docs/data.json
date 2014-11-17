@@ -2,12 +2,12 @@
     "project": {
         "name": "ParticlePack1",
         "description": "Kiwi.js WebGL Cartoon Particles - ParticlePack1.",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "url": "http://kiwijs.org/"
     },
     "files": {
-        "src\\_particlepack1.js": {
-            "name": "src\\_particlepack1.js",
+        "src/_particlepack1.js": {
+            "name": "src/_particlepack1.js",
             "modules": {
                 "Kiwi.Plugins": 1
             },
@@ -19,141 +19,141 @@
                 "Kiwi.Plugins": 1
             }
         },
-        "src\\bam.js": {
-            "name": "src\\bam.js",
+        "src/bam.js": {
+            "name": "src/bam.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\bluefire.js": {
-            "name": "src\\bluefire.js",
+        "src/bluefire.js": {
+            "name": "src/bluefire.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\boom.js": {
-            "name": "src\\boom.js",
+        "src/boom.js": {
+            "name": "src/boom.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\explosion.js": {
-            "name": "src\\explosion.js",
+        "src/explosion.js": {
+            "name": "src/explosion.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\fireworks.js": {
-            "name": "src\\fireworks.js",
+        "src/fireworks.js": {
+            "name": "src/fireworks.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\gasfire.js": {
-            "name": "src\\gasfire.js",
+        "src/gasfire.js": {
+            "name": "src/gasfire.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\gasleak.js": {
-            "name": "src\\gasleak.js",
+        "src/gasleak.js": {
+            "name": "src/gasleak.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\hitlines.js": {
-            "name": "src\\hitlines.js",
+        "src/hitlines.js": {
+            "name": "src/hitlines.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\kaboom.js": {
-            "name": "src\\kaboom.js",
+        "src/kaboom.js": {
+            "name": "src/kaboom.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\lightning.js": {
-            "name": "src\\lightning.js",
+        "src/lightning.js": {
+            "name": "src/lightning.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\orangefire.js": {
-            "name": "src\\orangefire.js",
+        "src/orangefire.js": {
+            "name": "src/orangefire.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\poison.js": {
-            "name": "src\\poison.js",
+        "src/poison.js": {
+            "name": "src/poison.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\poof.js": {
-            "name": "src\\poof.js",
+        "src/poof.js": {
+            "name": "src/poof.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\pow.js": {
-            "name": "src\\pow.js",
+        "src/pow.js": {
+            "name": "src/pow.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\redfire.js": {
-            "name": "src\\redfire.js",
+        "src/redfire.js": {
+            "name": "src/redfire.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\smoke.js": {
-            "name": "src\\smoke.js",
+        "src/smoke.js": {
+            "name": "src/smoke.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\smokepuffs.js": {
-            "name": "src\\smokepuffs.js",
+        "src/smokepuffs.js": {
+            "name": "src/smokepuffs.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\stars.js": {
-            "name": "src\\stars.js",
+        "src/stars.js": {
+            "name": "src/stars.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\tornado.js": {
-            "name": "src\\tornado.js",
+        "src/tornado.js": {
+            "name": "src/tornado.js",
             "modules": {},
             "classes": {},
             "fors": {},
             "namespaces": {}
         },
-        "src\\zap.js": {
-            "name": "src\\zap.js",
+        "src/zap.js": {
+            "name": "src/zap.js",
             "modules": {},
             "classes": {},
             "fors": {},
@@ -173,7 +173,7 @@
             "namespaces": {
                 "Kiwi.Plugins": 1
             },
-            "file": "src\\_particlepack1.js",
+            "file": "src/_particlepack1.js",
             "line": 1
         },
         "Kiwi.Plugins": {
@@ -189,9 +189,9 @@
             },
             "module": "Kiwi",
             "namespace": "",
-            "file": "src\\_particlepack1.js",
+            "file": "src/_particlepack1.js",
             "line": 1,
-            "description": "For a walkthrough on setting up the particle pack plugin check the <a href=\"https://github.com/gamelab/particle-pack-1-plugin/blob/master/README.md\"><README./a>",
+            "description": "For a walkthrough on setting up the particle pack plugin check the\n<a href=\"https://github.com/gamelab/particle-pack-1-plugin/blob/master/README.md\">README.</a>",
             "tag": "main",
             "itemtype": "main"
         }
@@ -208,15 +208,15 @@
             "module": "Kiwi",
             "submodule": "Kiwi.Plugins",
             "namespace": "Kiwi.Plugins",
-            "file": "src\\_particlepack1.js",
+            "file": "src/_particlepack1.js",
             "line": 1,
-            "description": "For a walkthrough on setting up the particle pack plugin check the <a href=\"https://github.com/gamelab/particle-pack-1-plugin/blob/master/README.md\"><README./a>"
+            "description": "For a walkthrough on setting up the particle pack plugin check the\n<a href=\"https://github.com/gamelab/particle-pack-1-plugin/blob/master/README.md\">README.</a>"
         }
     },
     "classitems": [
         {
-            "file": "src\\_particlepack1.js",
-            "line": 11,
+            "file": "src/_particlepack1.js",
+            "line": 12,
             "description": "The name of this plugin.",
             "itemtype": "property",
             "name": "name",
@@ -229,8 +229,8 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\_particlepack1.js",
-            "line": 19,
+            "file": "src/_particlepack1.js",
+            "line": 20,
             "description": "The version of this plugin in semver (semantic versioning) format",
             "itemtype": "property",
             "name": "version",
@@ -243,9 +243,9 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\_particlepack1.js",
-            "line": 27,
-            "description": "The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format",
+            "file": "src/_particlepack1.js",
+            "line": 28,
+            "description": "The minimum version of Kiwi.js required to run this plugin in\n\tsemver (semantic versioning) format",
             "itemtype": "property",
             "name": "minimumKiwiVersion",
             "type": "String",
@@ -257,8 +257,8 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\_particlepack1.js",
-            "line": 35,
+            "file": "src/_particlepack1.js",
+            "line": 37,
             "description": "Other plugins required for this plugin to run.",
             "itemtype": "property",
             "name": "pluginDependencies",
@@ -271,8 +271,8 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\_particlepack1.js",
-            "line": 53,
+            "file": "src/_particlepack1.js",
+            "line": 51,
             "description": "Registers this plugin with the Global Kiwi Plugins Manager if it is avaiable.",
             "class": "Kiwi.Plugins.ParticlePack1",
             "module": "Kiwi",
@@ -280,7 +280,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\bam.js",
+            "file": "src/bam.js",
             "line": 1,
             "description": "ParticlePack1 Bam Effect.",
             "itemtype": "property",
@@ -294,7 +294,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\bluefire.js",
+            "file": "src/bluefire.js",
             "line": 1,
             "description": "ParticlePack1 Bluefire Effect.",
             "itemtype": "property",
@@ -308,7 +308,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\boom.js",
+            "file": "src/boom.js",
             "line": 1,
             "description": "ParticlePack1 Boom Effect.",
             "itemtype": "property",
@@ -322,7 +322,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\explosion.js",
+            "file": "src/explosion.js",
             "line": 1,
             "description": "ParticlePack1 Explosion Effect.",
             "itemtype": "property",
@@ -336,7 +336,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\fireworks.js",
+            "file": "src/fireworks.js",
             "line": 1,
             "description": "ParticlePack1 Fireworks Effect.",
             "itemtype": "property",
@@ -350,7 +350,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\gasfire.js",
+            "file": "src/gasfire.js",
             "line": 1,
             "description": "ParticlePack1 Gasfire Effect.",
             "itemtype": "property",
@@ -364,7 +364,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\gasleak.js",
+            "file": "src/gasleak.js",
             "line": 1,
             "description": "ParticlePack1 Gasleak Effect.",
             "itemtype": "property",
@@ -378,7 +378,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\hitlines.js",
+            "file": "src/hitlines.js",
             "line": 1,
             "description": "ParticlePack1 Hitlines Effect.",
             "itemtype": "property",
@@ -392,7 +392,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\kaboom.js",
+            "file": "src/kaboom.js",
             "line": 1,
             "description": "ParticlePack1 Kaboom Effect.",
             "itemtype": "property",
@@ -406,7 +406,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\lightning.js",
+            "file": "src/lightning.js",
             "line": 1,
             "description": "ParticlePack1 Lightning Effect.",
             "itemtype": "property",
@@ -420,7 +420,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\orangefire.js",
+            "file": "src/orangefire.js",
             "line": 1,
             "description": "ParticlePack1 Orangefire Effect.",
             "itemtype": "property",
@@ -434,7 +434,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\poison.js",
+            "file": "src/poison.js",
             "line": 1,
             "description": "ParticlePack1 Poison Effect.",
             "itemtype": "property",
@@ -448,7 +448,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\poof.js",
+            "file": "src/poof.js",
             "line": 1,
             "description": "ParticlePack1 Poof Effect.",
             "itemtype": "property",
@@ -462,7 +462,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\pow.js",
+            "file": "src/pow.js",
             "line": 1,
             "description": "ParticlePack1 Pow Effect.",
             "itemtype": "property",
@@ -476,7 +476,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\redfire.js",
+            "file": "src/redfire.js",
             "line": 1,
             "description": "ParticlePack1 Redfire Effect.",
             "itemtype": "property",
@@ -490,7 +490,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\smoke.js",
+            "file": "src/smoke.js",
             "line": 1,
             "description": "ParticlePack1 Smoke Effect.",
             "itemtype": "property",
@@ -504,7 +504,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\smokepuffs.js",
+            "file": "src/smokepuffs.js",
             "line": 1,
             "description": "ParticlePack1 Smokepuffs Effect.",
             "itemtype": "property",
@@ -518,7 +518,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\stars.js",
+            "file": "src/stars.js",
             "line": 1,
             "description": "ParticlePack1 Stars Effect.",
             "itemtype": "property",
@@ -532,7 +532,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\tornado.js",
+            "file": "src/tornado.js",
             "line": 1,
             "description": "ParticlePack1 Tornado Effect.",
             "itemtype": "property",
@@ -546,7 +546,7 @@
             "namespace": "Kiwi.Plugins"
         },
         {
-            "file": "src\\zap.js",
+            "file": "src/zap.js",
             "line": 1,
             "description": "ParticlePack1 Zap Effect.",
             "itemtype": "property",
@@ -563,7 +563,7 @@
     "warnings": [
         {
             "message": "Missing item type\nRegisters this plugin with the Global Kiwi Plugins Manager if it is avaiable.",
-            "line": " src\\_particlepack1.js:53"
+            "line": " src/_particlepack1.js:51"
         }
     ]
 }

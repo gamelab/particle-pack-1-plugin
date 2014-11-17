@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src\gasleak.js - ParticlePack1</title>
+    <title>src/gasleak.js - ParticlePack1</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 1.0.0</em>
+            <em>API Docs for: 1.0.1</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -86,200 +86,200 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src\gasleak.js</h1>
+                        <h1 class="file-heading">File: src/gasleak.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 /**
-  * ParticlePack1 Gasleak Effect.
-  * @property Gasleak
-  * @type Kiwi.Group
-  * @public
-  * @static
+* ParticlePack1 Gasleak Effect.
+* @property Gasleak
+* @type Kiwi.Group
+* @public
+* @static
 */
 
-Kiwi.Plugins.ParticlePack1.Gasleak = function (state,x,y) { 
-  this.cloudsConfig = {
-  &quot;numParts&quot;: 10,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 100,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 200,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;point&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: false,
-  &quot;velShape&quot;: &quot;radial&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: 0,
-  &quot;velAngMin&quot;: 0,
-  &quot;velAngMax&quot;: 0,
-  &quot;velRadius&quot;: 200,
-  &quot;velRadialStart&quot;: 4.34586983746588,
-  &quot;velRadialEnd&quot;: 5.1312680008633285,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 200,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 1,
-  &quot;minLifespan&quot;: 0.5,
-  &quot;maxLifespan&quot;: 0.7,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 0,
-  &quot;startSize&quot;: 2,
-  &quot;endSize&quot;: 100,
-  &quot;loop&quot;: true,
-  &quot;colEnvKeyframes&quot;: [
-    0.5,
-    0.6
-  ],
-  &quot;alpha&quot;: 0.7,
-  &quot;colEnv0&quot;: [
-    0.9686274509803922,
-    0.9803921568627451,
-    0.9882352941176471
-  ],
-  &quot;colEnv1&quot;: [
-    0.9137254901960784,
-    0.8666666666666667,
-    0.8705882352941177
-  ],
-  &quot;colEnv2&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;colEnv3&quot;: [
-    0.8705882352941177,
-    0.8705882352941177,
-    0.8705882352941177
-  ],
-  &quot;alphaGradient&quot;: [
-    1,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: false,
-  &quot;cells&quot;: [
-    6
-  ],
-  
-}
+Kiwi.Plugins.ParticlePack1.Gasleak = function( state, x, y ) {
+	this.cloudsConfig = {
+		&quot;numParts&quot;: 10,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 100,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 200,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;point&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: false,
+		&quot;velShape&quot;: &quot;radial&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: 0,
+		&quot;velAngMin&quot;: 0,
+		&quot;velAngMax&quot;: 0,
+		&quot;velRadius&quot;: 200,
+		&quot;velRadialStart&quot;: 4.34586983746588,
+		&quot;velRadialEnd&quot;: 5.1312680008633285,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 200,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 1,
+		&quot;minLifespan&quot;: 0.5,
+		&quot;maxLifespan&quot;: 0.7,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 0,
+		&quot;startSize&quot;: 2,
+		&quot;endSize&quot;: 100,
+		&quot;loop&quot;: true,
+		&quot;colEnvKeyframes&quot;: [
+			0.5,
+			0.6
+		],
+		&quot;alpha&quot;: 0.7,
+		&quot;colEnv0&quot;: [
+			0.9686274509803922,
+			0.9803921568627451,
+			0.9882352941176471
+		],
+		&quot;colEnv1&quot;: [
+			0.9137254901960784,
+			0.8666666666666667,
+			0.8705882352941177
+		],
+		&quot;colEnv2&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;colEnv3&quot;: [
+			0.8705882352941177,
+			0.8705882352941177,
+			0.8705882352941177
+		],
+		&quot;alphaGradient&quot;: [
+			1,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: false,
+		&quot;cells&quot;: [
+			6
+		]
+	};
 
-this.jetConfig = {
-  &quot;numParts&quot;: 6,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 100,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 200,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;point&quot;,
-  &quot;maxVel&quot;: 725,
-  &quot;minVel&quot;: -478,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: true,
-  &quot;velShape&quot;: &quot;line&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: -100,
-  &quot;velAngMin&quot;: -0.2,
-  &quot;velAngMax&quot;: 0.2,
-  &quot;velRadius&quot;: 200,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 20,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0.6,
-  &quot;minLifespan&quot;: 0.2,
-  &quot;maxLifespan&quot;: 0.5,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 0,
-  &quot;startSize&quot;: 50,
-  &quot;endSize&quot;: 100,
-  &quot;loop&quot;: true,
-  &quot;colEnvKeyframes&quot;: [
-    0.5,
-    0.6
-  ],
-  &quot;alpha&quot;: 0.7,
-  &quot;colEnv0&quot;: [
-    0.9882352941176471,
-    0.9764705882352941,
-    0.9803921568627451
-  ],
-  &quot;colEnv1&quot;: [
-    0.7725490196078432,
-    0.803921568627451,
-    0.7803921568627451
-  ],
-  &quot;colEnv2&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;colEnv3&quot;: [
-    0.7137254901960784,
-    0.7137254901960784,
-    0.7137254901960784
-  ],
-  &quot;alphaGradient&quot;: [
-    0,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: false,
-  &quot;cells&quot;: [
-    4
-  ],
-  
-}
+	this.jetConfig = {
+		&quot;numParts&quot;: 6,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 100,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 200,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;point&quot;,
+		&quot;maxVel&quot;: 725,
+		&quot;minVel&quot;: -478,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: true,
+		&quot;velShape&quot;: &quot;line&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: -100,
+		&quot;velAngMin&quot;: -0.2,
+		&quot;velAngMax&quot;: 0.2,
+		&quot;velRadius&quot;: 200,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 20,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0.6,
+		&quot;minLifespan&quot;: 0.2,
+		&quot;maxLifespan&quot;: 0.5,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 0,
+		&quot;startSize&quot;: 50,
+		&quot;endSize&quot;: 100,
+		&quot;loop&quot;: true,
+		&quot;colEnvKeyframes&quot;: [
+			0.5,
+			0.6
+		],
+		&quot;alpha&quot;: 0.7,
+		&quot;colEnv0&quot;: [
+			0.9882352941176471,
+			0.9764705882352941,
+			0.9803921568627451
+		],
+		&quot;colEnv1&quot;: [
+			0.7725490196078432,
+			0.803921568627451,
+			0.7803921568627451
+		],
+		&quot;colEnv2&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;colEnv3&quot;: [
+			0.7137254901960784,
+			0.7137254901960784,
+			0.7137254901960784
+		],
+		&quot;alphaGradient&quot;: [
+			0,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: false,
+		&quot;cells&quot;: [
+			4
+		]
+	};
 
-  var group = new Kiwi.Group(state)
-  group.x = x;
-  group.y = y;
-  var clouds = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,-15,this.cloudsConfig);
-  var jet = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.jetConfig);
-  group.addChild(clouds);
-  group.addChild(jet);
+	var group = new Kiwi.Group( state );
+	group.x = x;
+	group.y = y;
+	var clouds = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, -15,
+		this.cloudsConfig );
+	var jet = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0, this.jetConfig );
+	group.addChild( clouds );
+	group.addChild( jet );
 
-  return group;
-
-}
+	return group;
+};
 
     </pre>
 </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src\lightning.js - ParticlePack1</title>
+    <title>src/lightning.js - ParticlePack1</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 1.0.0</em>
+            <em>API Docs for: 1.0.1</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -86,373 +86,377 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src\lightning.js</h1>
+                        <h1 class="file-heading">File: src/lightning.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 /**
-  * ParticlePack1 Lightning Effect.
-  * @property Lightning
-  * @type Kiwi.Group
-  * @public
-  * @static
+* ParticlePack1 Lightning Effect.
+* @property Lightning
+* @type Kiwi.Group
+* @public
+* @static
 */
 
-Kiwi.Plugins.ParticlePack1.Lightning = function (state,x,y) { 
-  this.glowConfig = {
-  &quot;numParts&quot;: 1,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 100,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 200,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;point&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: true,
-  &quot;velShape&quot;: &quot;center&quot;,
-  &quot;velOffsetX&quot;: -100,
-  &quot;velOffsetY&quot;: 50,
-  &quot;velAngMin&quot;: 0,
-  &quot;velAngMax&quot;: 0,
-  &quot;velRadius&quot;: 200,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 200,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0.1,
-  &quot;minLifespan&quot;: 0.1,
-  &quot;maxLifespan&quot;: 0.3,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 0,
-  &quot;startSize&quot;: 1,
-  &quot;endSize&quot;: 200,
-  &quot;loop&quot;: false,
-  &quot;colEnvKeyframes&quot;: [
-    0.5,
-    0.6
-  ],
-  &quot;alpha&quot;: 0.5,
-  &quot;colEnv0&quot;: [
-    0.9882352941176471,
-    0.9647058823529412,
-    0.9176470588235294
-  ],
-  &quot;colEnv1&quot;: [
-    1,
-    1,
-    0
-  ],
-  &quot;colEnv2&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;colEnv3&quot;: [
-    1,
-    0.8901960784313725,
-    0
-  ],
-  &quot;alphaGradient&quot;: [
-    1,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: true,
-  &quot;cells&quot;: [
-    9
-  ],
-  &quot;textureID&quot;: &quot;_128x128&quot;
-}
+Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
+	this.glowConfig = {
+		&quot;numParts&quot;: 1,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 100,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 200,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;point&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: true,
+		&quot;velShape&quot;: &quot;center&quot;,
+		&quot;velOffsetX&quot;: -100,
+		&quot;velOffsetY&quot;: 50,
+		&quot;velAngMin&quot;: 0,
+		&quot;velAngMax&quot;: 0,
+		&quot;velRadius&quot;: 200,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 200,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0.1,
+		&quot;minLifespan&quot;: 0.1,
+		&quot;maxLifespan&quot;: 0.3,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 0,
+		&quot;startSize&quot;: 1,
+		&quot;endSize&quot;: 200,
+		&quot;loop&quot;: false,
+		&quot;colEnvKeyframes&quot;: [
+			0.5,
+			0.6
+		],
+		&quot;alpha&quot;: 0.5,
+		&quot;colEnv0&quot;: [
+			0.9882352941176471,
+			0.9647058823529412,
+			0.9176470588235294
+		],
+		&quot;colEnv1&quot;: [
+			1,
+			1,
+			0
+		],
+		&quot;colEnv2&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;colEnv3&quot;: [
+			1,
+			0.8901960784313725,
+			0
+		],
+		&quot;alphaGradient&quot;: [
+			1,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: true,
+		&quot;cells&quot;: [
+			9
+		],
+		&quot;textureID&quot;: &quot;_128x128&quot;
+	};
 
-this.boltConfig = {
-  &quot;numParts&quot;: 4,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: -30,
-  &quot;posRadius&quot;: 100,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 5,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;line&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 77,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: true,
-  &quot;velShape&quot;: &quot;point&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: -396.3,
-  &quot;velAngMin&quot;: 0,
-  &quot;velAngMax&quot;: 0,
-  &quot;velRadius&quot;: 200,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 2,
-  &quot;velHeight&quot;: 12,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 291,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0.1,
-  &quot;minLifespan&quot;: 0.1,
-  &quot;maxLifespan&quot;: 0.2,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 0,
-  &quot;startSize&quot;: 4,
-  &quot;endSize&quot;: 207,
-  &quot;loop&quot;: false,
-  &quot;colEnvKeyframes&quot;: [
-    &quot;0.2&quot;,
-    &quot;0.5&quot;
-  ],
-  &quot;alpha&quot;: &quot;1&quot;,
-  &quot;colEnv0&quot;: [
-    0.9921568627450981,
-    0.9490196078431372,
-    0.9176470588235294
-  ],
-  &quot;colEnv1&quot;: [
-    1,
-    1,
-    0
-  ],
-  &quot;colEnv2&quot;: [
-    0.9294117647058824,
-    0.9333333333333333,
-    0.9803921568627451
-  ],
-  &quot;colEnv3&quot;: [
-    0.996078431372549,
-    0.9098039215686274,
-    0.09803921568627451
-  ],
-  &quot;alphaGradient&quot;: [
-    1,
-    1,
-    &quot;1&quot;,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: false,
-  &quot;cells&quot;: [
-    5
-  ]
- 
-}
+	this.boltConfig = {
+		&quot;numParts&quot;: 4,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: -30,
+		&quot;posRadius&quot;: 100,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 5,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;line&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 77,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: true,
+		&quot;velShape&quot;: &quot;point&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: -396.3,
+		&quot;velAngMin&quot;: 0,
+		&quot;velAngMax&quot;: 0,
+		&quot;velRadius&quot;: 200,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 2,
+		&quot;velHeight&quot;: 12,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 291,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0.1,
+		&quot;minLifespan&quot;: 0.1,
+		&quot;maxLifespan&quot;: 0.2,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 0,
+		&quot;startSize&quot;: 4,
+		&quot;endSize&quot;: 207,
+		&quot;loop&quot;: false,
+		&quot;colEnvKeyframes&quot;: [
+			&quot;0.2&quot;,
+			&quot;0.5&quot;
+		],
+		&quot;alpha&quot;: 1,
+		&quot;colEnv0&quot;: [
+			0.9921568627450981,
+			0.9490196078431372,
+			0.9176470588235294
+		],
+		&quot;colEnv1&quot;: [
+			1,
+			1,
+			0
+		],
+		&quot;colEnv2&quot;: [
+			0.9294117647058824,
+			0.9333333333333333,
+			0.9803921568627451
+		],
+		&quot;colEnv3&quot;: [
+			0.996078431372549,
+			0.9098039215686274,
+			0.09803921568627451
+		],
+		&quot;alphaGradient&quot;: [
+			1,
+			1,
+			&quot;1&quot;,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: false,
+		&quot;cells&quot;: [
+			5
+		]
+	};
 
-this.linesConfig = {
-  &quot;numParts&quot;: 1,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 100,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 200,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;point&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: true,
-  &quot;velShape&quot;: &quot;center&quot;,
-  &quot;velOffsetX&quot;: -100,
-  &quot;velOffsetY&quot;: 50,
-  &quot;velAngMin&quot;: 0,
-  &quot;velAngMax&quot;: 2,
-  &quot;velRadius&quot;: 200,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 200,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0,
-  &quot;minLifespan&quot;: 0.2,
-  &quot;maxLifespan&quot;: 0.3,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 0,
-  &quot;startSize&quot;: 1,
-  &quot;endSize&quot;: 100,
-  &quot;loop&quot;: false,
-  &quot;colEnvKeyframes&quot;: [
-    0.5,
-    0.6
-  ],
-  &quot;alpha&quot;: 0.8,
-  &quot;colEnv0&quot;: [
-    0.9882352941176471,
-    0.9725490196078431,
-    0.9568627450980393
-  ],
-  &quot;colEnv1&quot;: [
-    1,
-    0.9137254901960784,
-    0
-  ],
-  &quot;colEnv2&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;colEnv3&quot;: [
-    1,
-    0.8784313725490196,
-    0
-  ],
-  &quot;alphaGradient&quot;: [
-    1,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: false,
-  &quot;cells&quot;: [
-    3
-  ]
-} 
+	this.linesConfig = {
+		&quot;numParts&quot;: 1,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 100,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 200,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;point&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: true,
+		&quot;velShape&quot;: &quot;center&quot;,
+		&quot;velOffsetX&quot;: -100,
+		&quot;velOffsetY&quot;: 50,
+		&quot;velAngMin&quot;: 0,
+		&quot;velAngMax&quot;: 2,
+		&quot;velRadius&quot;: 200,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 200,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0,
+		&quot;minLifespan&quot;: 0.2,
+		&quot;maxLifespan&quot;: 0.3,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 0,
+		&quot;startSize&quot;: 1,
+		&quot;endSize&quot;: 100,
+		&quot;loop&quot;: false,
+		&quot;colEnvKeyframes&quot;: [
+			0.5,
+			0.6
+		],
+		&quot;alpha&quot;: 0.8,
+		&quot;colEnv0&quot;: [
+			0.9882352941176471,
+			0.9725490196078431,
+			0.9568627450980393
+		],
+		&quot;colEnv1&quot;: [
+			1,
+			0.9137254901960784,
+			0
+		],
+		&quot;colEnv2&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;colEnv3&quot;: [
+			1,
+			0.8784313725490196,
+			0
+		],
+		&quot;alphaGradient&quot;: [
+			1,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: false,
+		&quot;cells&quot;: [
+			3
+		]
+	};
 
-this.sparksConfig = {
-  &quot;numParts&quot;: 10,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 5,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 6.230825429619757,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 33,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;radial&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: false,
-  &quot;velShape&quot;: &quot;radial&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: -150,
-  &quot;velAngMin&quot;: -5,
-  &quot;velAngMax&quot;: 2,
-  &quot;velRadius&quot;: 100,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 200,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0.1,
-  &quot;minLifespan&quot;: 0.4,
-  &quot;maxLifespan&quot;: 1,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 400,
-  &quot;startSize&quot;: 1,
-  &quot;endSize&quot;: 10,
-  &quot;loop&quot;: false,
-  &quot;colEnvKeyframes&quot;: [
-    0.5,
-    0.6
-  ],
-  &quot;alpha&quot;: &quot;1&quot;,
-  &quot;colEnv0&quot;: [
-    0.9882352941176471,
-    0.9411764705882353,
-    0.9411764705882353
-  ],
-  &quot;colEnv1&quot;: [
-    1,
-    1,
-    0
-  ],
-  &quot;colEnv2&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;colEnv3&quot;: [
-    1,
-    0.9058823529411765,
-    0
-  ],
-  &quot;alphaGradient&quot;: [
-    1,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: true,
-  &quot;cells&quot;: [
-    6
-  ],
-  &quot;textureID&quot;: &quot;_16x16&quot;
-}
+	this.sparksConfig = {
+		&quot;numParts&quot;: 10,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 5,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 6.230825429619757,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 33,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;radial&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: false,
+		&quot;velShape&quot;: &quot;radial&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: -150,
+		&quot;velAngMin&quot;: -5,
+		&quot;velAngMax&quot;: 2,
+		&quot;velRadius&quot;: 100,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 200,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0.1,
+		&quot;minLifespan&quot;: 0.4,
+		&quot;maxLifespan&quot;: 1,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 400,
+		&quot;startSize&quot;: 1,
+		&quot;endSize&quot;: 10,
+		&quot;loop&quot;: false,
+		&quot;colEnvKeyframes&quot;: [
+			0.5,
+			0.6
+		],
+		&quot;alpha&quot;: 1,
+		&quot;colEnv0&quot;: [
+			0.9882352941176471,
+			0.9411764705882353,
+			0.9411764705882353
+		],
+		&quot;colEnv1&quot;: [
+			1,
+			1,
+			0
+		],
+		&quot;colEnv2&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;colEnv3&quot;: [
+			1,
+			0.9058823529411765,
+			0
+		],
+		&quot;alphaGradient&quot;: [
+			1,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: true,
+		&quot;cells&quot;: [
+			6
+		],
+		&quot;textureID&quot;: &quot;_16x16&quot;
+	};
 
-  var group = new Kiwi.Group(state)
-  group.x = x;
-  group.y = y;
-  var glow = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.glowConfig);
-  var bolt = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.boltConfig);
-  var lines = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.linesConfig);
-  var sparks = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.sparksConfig);
-  group.addChild(glow);
-  group.addChild(bolt);
-  group.addChild(lines);
-  group.addChild(sparks);
+	var group = new Kiwi.Group( state );
+	group.x = x;
+	group.y = y;
+	var glow = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0, this.glowConfig );
+	var bolt = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0, this.boltConfig );
+	var lines = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.linesConfig );
+	var sparks = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.sparksConfig) ;
+	group.addChild( glow );
+	group.addChild( bolt );
+	group.addChild( lines );
+	group.addChild( sparks );
 
-  return group;
-
-}
+	return group;
+};
 
     </pre>
 </div>

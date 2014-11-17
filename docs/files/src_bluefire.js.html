@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src\bluefire.js - ParticlePack1</title>
+    <title>src/bluefire.js - ParticlePack1</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 1.0.0</em>
+            <em>API Docs for: 1.0.1</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -86,106 +86,106 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src\bluefire.js</h1>
+                        <h1 class="file-heading">File: src/bluefire.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 /**
-  * ParticlePack1 Bluefire Effect.
-  * @property Bluefire
-  * @type Kiwi.Entity
-  * @public
-  * @static
+* ParticlePack1 Bluefire Effect.
+* @property Bluefire
+* @type Kiwi.Entity
+* @public
+* @static
 */
 
-Kiwi.Plugins.ParticlePack1.Bluefire = function (state,x,y) { 
-  this.config = {
-  &quot;numParts&quot;: 25,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 10,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 8,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;line&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: false,
-  &quot;velRandomRadial&quot;: false,
-  &quot;velShape&quot;: &quot;line&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: -180,
-  &quot;velAngMin&quot;: 0,
-  &quot;velAngMax&quot;: 0,
-  &quot;velRadius&quot;: 55.1,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 30,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 1,
-  &quot;minLifespan&quot;: 0.5,
-  &quot;maxLifespan&quot;: 1,
-  &quot;gravityY&quot;: 100,
-  &quot;gravityX&quot;: 0,
-  &quot;startSize&quot;: 100,
-  &quot;endSize&quot;: 1,
-  &quot;loop&quot;: true,
-  &quot;colEnvKeyframes&quot;: [
-    0.1,
-    0.3
-  ],
-  &quot;alpha&quot;: 0.7,
-  &quot;colEnv0&quot;: [
-    0,
-    0.8196078431372549,
-    0.9921568627450981
-  ],
-  &quot;colEnv1&quot;: [
-    0.047058823529411764,
-    0.36470588235294116,
-    0.984313725490196
-  ],
-  &quot;colEnv2&quot;: [
-    0.12549019607843137,
-    0.19215686274509805,
-    0.9647058823529412
-  ],
-  &quot;colEnv3&quot;: [
-    0.047058823529411764,
-    0.2196078431372549,
-    0.9882352941176471
-  ],
-  &quot;alphaGradient&quot;: [
-    &quot;0&quot;,
-    1,
-    1,
-    1
-  ],
-  &quot;alphaStops&quot;: [
-    &quot;0.2&quot;,
-    0.6
-  ],
-  &quot;cells&quot;: [
-    1
-  ],
-  &quot;additive&quot;: true
-}
+Kiwi.Plugins.ParticlePack1.Bluefire = function( state, x, y ) {
+	this.config = {
+		&quot;numParts&quot;: 25,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 10,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 8,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;line&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: false,
+		&quot;velRandomRadial&quot;: false,
+		&quot;velShape&quot;: &quot;line&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: -180,
+		&quot;velAngMin&quot;: 0,
+		&quot;velAngMax&quot;: 0,
+		&quot;velRadius&quot;: 55.1,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 30,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 1,
+		&quot;minLifespan&quot;: 0.5,
+		&quot;maxLifespan&quot;: 1,
+		&quot;gravityY&quot;: 100,
+		&quot;gravityX&quot;: 0,
+		&quot;startSize&quot;: 100,
+		&quot;endSize&quot;: 1,
+		&quot;loop&quot;: true,
+		&quot;colEnvKeyframes&quot;: [
+			0.1,
+			0.3
+		],
+		&quot;alpha&quot;: 0.7,
+		&quot;colEnv0&quot;: [
+			0,
+			0.8196078431372549,
+			0.9921568627450981
+		],
+		&quot;colEnv1&quot;: [
+			0.047058823529411764,
+			0.36470588235294116,
+			0.984313725490196
+		],
+		&quot;colEnv2&quot;: [
+			0.12549019607843137,
+			0.19215686274509805,
+			0.9647058823529412
+		],
+		&quot;colEnv3&quot;: [
+			0.047058823529411764,
+			0.2196078431372549,
+			0.9882352941176471
+		],
+		&quot;alphaGradient&quot;: [
+			&quot;0&quot;,
+			1,
+			1,
+			1
+		],
+		&quot;alphaStops&quot;: [
+			&quot;0.2&quot;,
+			0.6
+		],
+		&quot;cells&quot;: [
+			1
+		],
+		&quot;additive&quot;: true
+	};
 
-  return new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,x,y,this.config);
-
-}
+	return new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, x, y, this.config );
+};
 
     </pre>
 </div>

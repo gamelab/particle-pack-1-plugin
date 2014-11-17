@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src\poof.js - ParticlePack1</title>
+    <title>src/poof.js - ParticlePack1</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -19,7 +19,7 @@
             
         </div>
         <div class="yui3-u-1-4 version">
-            <em>API Docs for: 1.0.0</em>
+            <em>API Docs for: 1.0.1</em>
         </div>
     </div>
     <div id="bd" class="yui3-g">
@@ -86,198 +86,202 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src\poof.js</h1>
+                        <h1 class="file-heading">File: src/poof.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 /**
-  * ParticlePack1 Poof Effect.
-  * @property Poof
-  * @type Kiwi.Group
-  * @public
-  * @static
+* ParticlePack1 Poof Effect.
+* @property Poof
+* @type Kiwi.Group
+* @public
+* @static
 */
 
-Kiwi.Plugins.ParticlePack1.Poof = function (state,x,y) { 
-  this.poofConfig = {
-  &quot;numParts&quot;: 1,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 100,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.1419999999999995,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 200,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;point&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: true,
-  &quot;velRandomRadial&quot;: true,
-  &quot;velShape&quot;: &quot;point&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: -120,
-  &quot;velAngMin&quot;: -0.3,
-  &quot;velAngMax&quot;: 0.7,
-  &quot;velRadius&quot;: 200,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 200,
-  &quot;velRandomLine&quot;: true,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0,
-  &quot;minLifespan&quot;: 0.6,
-  &quot;maxLifespan&quot;: 0.6,
-  &quot;gravityX&quot;: 0,
-  &quot;gravityY&quot;: 400,
-  &quot;startSize&quot;: 20,
-  &quot;endSize&quot;: 125,
-  &quot;loop&quot;: false,
-  &quot;colEnvKeyframes&quot;: [
-    0.5,
-    0.6
-  ],
-  &quot;alpha&quot;: 1,
-  &quot;colEnv0&quot;: [
-    0.9882352941176471,
-    0.9725490196078431,
-    0.9529411764705882
-  ],
-  &quot;colEnv1&quot;: [
-    1,
-    0.9725490196078431,
-    0.9019607843137255
-  ],
-  &quot;colEnv2&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;colEnv3&quot;: [
-    1,
-    1,
-    1
-  ],
-  &quot;alphaGradient&quot;: [
-    &quot;1&quot;,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    0.3,
-    0.7
-  ],
-  &quot;additive&quot;: false,
-  &quot;cells&quot;: [
-    17
-  ],
-  &quot;textureID&quot;: &quot;_128x128&quot;
-}
+Kiwi.Plugins.ParticlePack1.Poof = function ( state, x, y ) {
+	this.poofConfig = {
+		&quot;numParts&quot;: 1,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 100,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.1419999999999995,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 200,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;point&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: true,
+		&quot;velRandomRadial&quot;: true,
+		&quot;velShape&quot;: &quot;point&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: -120,
+		&quot;velAngMin&quot;: -0.3,
+		&quot;velAngMax&quot;: 0.7,
+		&quot;velRadius&quot;: 200,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 200,
+		&quot;velRandomLine&quot;: true,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0,
+		&quot;minLifespan&quot;: 0.6,
+		&quot;maxLifespan&quot;: 0.6,
+		&quot;gravityX&quot;: 0,
+		&quot;gravityY&quot;: 400,
+		&quot;startSize&quot;: 20,
+		&quot;endSize&quot;: 125,
+		&quot;loop&quot;: false,
+		&quot;colEnvKeyframes&quot;: [
+			0.5,
+			0.6
+		],
+		&quot;alpha&quot;: 1,
+		&quot;colEnv0&quot;: [
+			0.9882352941176471,
+			0.9725490196078431,
+			0.9529411764705882
+		],
+		&quot;colEnv1&quot;: [
+			1,
+			0.9725490196078431,
+			0.9019607843137255
+		],
+		&quot;colEnv2&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;colEnv3&quot;: [
+			1,
+			1,
+			1
+		],
+		&quot;alphaGradient&quot;: [
+			&quot;1&quot;,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			0.3,
+			0.7
+		],
+		&quot;additive&quot;: false,
+		&quot;cells&quot;: [
+			17
+		],
+		&quot;textureID&quot;: &quot;_128x128&quot;
+	};
 
-this.smokepuffsConfig = {
-  &quot;numParts&quot;: 1,
-  &quot;posOffsetX&quot;: 0,
-  &quot;posOffsetY&quot;: 0,
-  &quot;posRadius&quot;: 9.8,
-  &quot;posRadialStart&quot;: 0,
-  &quot;posRadialEnd&quot;: 3.142,
-  &quot;posWidth&quot;: 200,
-  &quot;posHeight&quot;: 200,
-  &quot;posConstrainRect&quot;: true,
-  &quot;posAngle&quot;: 0,
-  &quot;posLength&quot;: 200,
-  &quot;posRandomLine&quot;: true,
-  &quot;posConstrainRadial&quot;: true,
-  &quot;posRandomRadial&quot;: true,
-  &quot;posShape&quot;: &quot;point&quot;,
-  &quot;maxVel&quot;: 100,
-  &quot;minVel&quot;: 70,
-  &quot;velConstrainRect&quot;: true,
-  &quot;velConstrainRadial&quot;: false,
-  &quot;velRandomRadial&quot;: false,
-  &quot;velShape&quot;: &quot;center&quot;,
-  &quot;velOffsetX&quot;: 0,
-  &quot;velOffsetY&quot;: -232,
-  &quot;velAngMin&quot;: -3,
-  &quot;velAngMax&quot;: 3,
-  &quot;velRadius&quot;: 55.1,
-  &quot;velRadialStart&quot;: 0,
-  &quot;velRadialEnd&quot;: 6.283185307179586,
-  &quot;velWidth&quot;: 200,
-  &quot;velHeight&quot;: 200,
-  &quot;velAngle&quot;: 0,
-  &quot;velLength&quot;: 89,
-  &quot;velRandomLine&quot;: false,
-  &quot;minStartTime&quot;: 0,
-  &quot;maxStartTime&quot;: 0,
-  &quot;minLifespan&quot;: 0.4,
-  &quot;maxLifespan&quot;: 0.4,
-  &quot;gravityY&quot;: 0,
-  &quot;gravityX&quot;: 0,
-  &quot;startSize&quot;: 70,
-  &quot;endSize&quot;: 180,
-  &quot;loop&quot;: false,
-  &quot;colEnvKeyframes&quot;: [
-    &quot;0.3&quot;,
-    0.6
-  ],
-  &quot;alpha&quot;: 1,
-  &quot;colEnv0&quot;: [
-    0.5725490196078431,
-    0.796078431372549,
-    0.9921568627450981
-  ],
-  &quot;colEnv1&quot;: [
-    0.6862745098039216,
-    0.8313725490196079,
-    0.9921568627450981
-  ],
-  &quot;colEnv2&quot;: [
-    0.996078431372549,
-    0.984313725490196,
-    0.9529411764705882
-  ],
-  &quot;colEnv3&quot;: [
-    0.7607843137254902,
-    0.807843137254902,
-    0.9137254901960784
-  ],
-  &quot;alphaGradient&quot;: [
-    &quot;0&quot;,
-    1,
-    1,
-    0
-  ],
-  &quot;alphaStops&quot;: [
-    &quot;0.2&quot;,
-    0.7
-  ],
-  &quot;cells&quot;: [
-    10
-  ],
-  &quot;additive&quot;: false
-}
+	this.smokepuffsConfig = {
+		&quot;numParts&quot;: 1,
+		&quot;posOffsetX&quot;: 0,
+		&quot;posOffsetY&quot;: 0,
+		&quot;posRadius&quot;: 9.8,
+		&quot;posRadialStart&quot;: 0,
+		&quot;posRadialEnd&quot;: 3.142,
+		&quot;posWidth&quot;: 200,
+		&quot;posHeight&quot;: 200,
+		&quot;posConstrainRect&quot;: true,
+		&quot;posAngle&quot;: 0,
+		&quot;posLength&quot;: 200,
+		&quot;posRandomLine&quot;: true,
+		&quot;posConstrainRadial&quot;: true,
+		&quot;posRandomRadial&quot;: true,
+		&quot;posShape&quot;: &quot;point&quot;,
+		&quot;maxVel&quot;: 100,
+		&quot;minVel&quot;: 70,
+		&quot;velConstrainRect&quot;: true,
+		&quot;velConstrainRadial&quot;: false,
+		&quot;velRandomRadial&quot;: false,
+		&quot;velShape&quot;: &quot;center&quot;,
+		&quot;velOffsetX&quot;: 0,
+		&quot;velOffsetY&quot;: -232,
+		&quot;velAngMin&quot;: -3,
+		&quot;velAngMax&quot;: 3,
+		&quot;velRadius&quot;: 55.1,
+		&quot;velRadialStart&quot;: 0,
+		&quot;velRadialEnd&quot;: 6.283185307179586,
+		&quot;velWidth&quot;: 200,
+		&quot;velHeight&quot;: 200,
+		&quot;velAngle&quot;: 0,
+		&quot;velLength&quot;: 89,
+		&quot;velRandomLine&quot;: false,
+		&quot;minStartTime&quot;: 0,
+		&quot;maxStartTime&quot;: 0,
+		&quot;minLifespan&quot;: 0.4,
+		&quot;maxLifespan&quot;: 0.4,
+		&quot;gravityY&quot;: 0,
+		&quot;gravityX&quot;: 0,
+		&quot;startSize&quot;: 70,
+		&quot;endSize&quot;: 180,
+		&quot;loop&quot;: false,
+		&quot;colEnvKeyframes&quot;: [
+			&quot;0.3&quot;,
+			0.6
+		],
+		&quot;alpha&quot;: 1,
+		&quot;colEnv0&quot;: [
+			0.5725490196078431,
+			0.796078431372549,
+			0.9921568627450981
+		],
+		&quot;colEnv1&quot;: [
+			0.6862745098039216,
+			0.8313725490196079,
+			0.9921568627450981
+		],
+		&quot;colEnv2&quot;: [
+			0.996078431372549,
+			0.984313725490196,
+			0.9529411764705882
+		],
+		&quot;colEnv3&quot;: [
+			0.7607843137254902,
+			0.807843137254902,
+			0.9137254901960784
+		],
+		&quot;alphaGradient&quot;: [
+			&quot;0&quot;,
+			1,
+			1,
+			0
+		],
+		&quot;alphaStops&quot;: [
+			&quot;0.2&quot;,
+			0.7
+		],
+		&quot;cells&quot;: [
+			10
+		],
+		&quot;additive&quot;: false
+	};
 
-  var group = new Kiwi.Group(state)
-  group.x = x;
-  group.y = y;
-  var poof = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.poofConfig);
-  var smokepuffs = new Kiwi.GameObjects.StatelessParticles(state,state.textures.particlePack1SpriteSheet,0,0,this.smokepuffsConfig);
-  group.addChild(poof);
-  group.addChild(smokepuffs);
+	var group = new Kiwi.Group( state );
+	group.x = x;
+	group.y = y;
+	var poof = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.poofConfig );
+	var smokepuffs = new Kiwi.GameObjects.StatelessParticles(
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.smokepuffsConfig );
+	group.addChild( poof );
+	group.addChild( smokepuffs );
 
-  return group;
-}
+	return group;
+};
 
     </pre>
 </div>
