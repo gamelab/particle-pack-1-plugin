@@ -42,11 +42,11 @@ If you have any problems then feel free to contact us via the http://www.kiwijs.
 ## How to Include:
 
 Copy the files you need:
-- Create a folder called "plugins" in your project folder.
-- Copy particlesgl.js (or particlesgl.min.js) from the "lib" folder into your plugins folder.
-- Copy particlepack1.js (or particlepack1.min.js) from the root folder to your plugins folder.
-- Create a folder called "assets" in your project folder.
-- Copy the two particle spritesheets from the repo assets folder assets folder into your project assets folder. 
+- Create a folder called `plugins` in your project folder.
+- Copy `particlesgl.js` (or `particlesgl.min.js`) from the `lib` folder into your `plugins` folder.
+- Copy `particlepack2.js` (or `particlepack2.min.js`) from the root folder to your `plugins` folder.
+- Create a folder called `assets` in your project folder.
+- Copy the two particle spritesheets from the repo `assets` folder into your project assets folder.
 
 Link the files:
 - Link the JavaScript files particlesgl.js and particlepack1.js (or the min versions of the files) into your HTML file. Make sure you link them underneath the link to the main Kiwi.js file AND underneath the Cocoon files if you are using Cocoon.
@@ -54,7 +54,7 @@ Link the files:
 	<script src="plugins/particlesgl-1.1.1.js"></script>
 	<script src="plugins/particlepack1-1.0.1.js"></script>
 
-This will add ALL the particle effects to your game. If you want to add them individually then add src/_particlepack1.js to your plugin folder instead and also include the config files that you want to use, eg.
+This will add ALL the particle effects to your game. If you want to add them individually then add `src/_particlepack1.js` to your plugin folder instead and also include the config files that you want to use, eg.
 
 	<script src="plugins/particlesgl-1.1.1.js"></script>
 	<script src="plugins/_particlepack1.js"></script>
@@ -69,22 +69,28 @@ You'll need to tell you game that it intends to use the plugins by adding their 
 
 ## How to use
 
-Check out the example found in the "examples" folder of this repository. View the source and run the examples. (You'll need a webserver to view the example - tip running 'grunt serve' in the root folder will bring up a webserver on localhost:9000)
-Read the API docs found in the "docs" folder of this repository.
-[Look at the tutorials on the Kiwijs.org website.](Something)
+Check out the example found in the `examples` folder of this repository. View the source and run the examples. (You'll need a webserver to view the example - tip running 'grunt serve' in the root folder will bring up a webserver on localhost:9000)
+Read the API docs found in the `docs` folder of this repository.
 
-The particle pack contains a number of game objects that you can add to a state. You'll need to add the spritesheets to your preloader which will look something like this
+The particle pack contains a number of game objects that you can add to a state. You'll need to add the spritesheets to your preloader which will look something like this:
 
 	MyState.preload = function() {
-		this.addSpriteSheet('particlePack1SpriteSheet', 'assets/particlepack1_128.png',128, 128, true, 8, 5, 5, 27, 27, 54, 54);
-		this.addSpriteSheet('particlePack1SpriteSheet_16', 'assets/particlepack1_16.png', 16, 16, true, 8, 5, 5, 4, 4, 8, 8);
+		this.addSpriteSheet(
+			"particlePack1SpriteSheet",
+			"assets/particlepack1_128.png",
+			128, 128, true, 8, 5, 5, 27, 27, 54, 54 );
+		this.addSpriteSheet(
+			"particlePack1SpriteSheet_16",
+			"assets/particlepack1_16.png",
+			16, 16, true, 8, 5, 5, 4, 4, 8, 8 );
 	};
 
 To create a particle effect add the following to your create function (this would add the effect to x:400, y:400)
 
 	MyState.create = function() {
-		this.bam = Kiwi.Plugins.ParticlePack1.Bam( this, 400, 300 );
-	}
+		this.bam =
+			Kiwi.Plugins.ParticlePack1.Bam( this, 400, 300 );
+	};
 
 Here is a list of all available effects and example lines to create them.
 
@@ -102,7 +108,6 @@ Single effects (These return a single particle gameobject)
 	this.smoke = Kiwi.Plugins.ParticlePack1.Smoke( this, 400, 300 );
 	this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs( this, 400, 300 );
 	this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks( this, 400, 300 );
-	
 
 Group effects (These return a group of gameobjects)
 
@@ -112,7 +117,6 @@ Group effects (These return a group of gameobjects)
 	this.poof = Kiwi.Plugins.ParticlePack1.Poof( this, 400, 300 );
 	this.pow = Kiwi.Plugins.ParticlePack1.Pow( this, 400, 300 );
 	this.zap = Kiwi.Plugins.ParticlePack1.Zap( this, 400, 300 );
-	
 	this.gasleak = Kiwi.Plugins.ParticlePack1.Gasleak( this, 400, 300 );
 	this.lightning = Kiwi.Plugins.ParticlePack1.Lightning( this, 400, 300 );
 
@@ -130,5 +134,4 @@ If it's a group you'll need to start each individually - for example
 		this.bam.members[ i ].startEmitting()
 	}
 
-To fully familiarize yourself with the API for controlling particle effects, you should see the [documentation](link) and [tutorials](link) for the ParticlesGL plugin.
-
+To fully familiarize yourself with the API for controlling particle effects, you should see the documentation for the [ParticlesGL plugin](https://github.com/gamelab/WebGL-Particles-Plugin).
