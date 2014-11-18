@@ -54,7 +54,7 @@ Kiwi.Plugins.ParticlePack1.Poison = function( state, x, y ) {
 		"endSize": 80,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 0.5,
@@ -79,7 +79,7 @@ Kiwi.Plugins.ParticlePack1.Poison = function( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0.3",
+			0.3,
 			1,
 			1,
 			0

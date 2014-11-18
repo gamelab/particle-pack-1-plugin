@@ -54,8 +54,8 @@ Kiwi.Plugins.ParticlePack1.Gasfire = function( state, x, y ) {
 		"endSize": 1,
 		"loop": true,
 		"colEnvKeyframes": [
-			"0.1",
-			"0.3"
+			0.1,
+			0.3
 		],
 		"alpha": 0.5,
 		"colEnv0": [
@@ -79,14 +79,14 @@ Kiwi.Plugins.ParticlePack1.Gasfire = function( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0",
-			"1",
-			"1",
-			"1"
+			0,
+			1,
+			1,
+			1
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			0

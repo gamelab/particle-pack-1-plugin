@@ -48,12 +48,11 @@ Kiwi.Plugins.ParticlePack1.Fireworks = function( state, x, y ) {
 		"maxStartTime": 0.1,
 		"minLifespan": 0.2,
 		"maxLifespan": 0.5,
-		"gravity": 250,
 		"startSize": 1,
 		"endSize": 30,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -78,7 +77,7 @@ Kiwi.Plugins.ParticlePack1.Fireworks = function( state, x, y ) {
 			0.32941176470588235
 		],
 		"alphaGradient": [
-			"1",
+			1,
 			1,
 			1,
 			0

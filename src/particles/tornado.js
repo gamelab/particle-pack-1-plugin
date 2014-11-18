@@ -48,7 +48,6 @@ Kiwi.Plugins.ParticlePack1.Tornado = function (state,x,y) {
 		"maxStartTime": 0.8,
 		"minLifespan": 0.8,
 		"maxLifespan": 1,
-		"gravity": 0,
 		"startSize": 2,
 		"endSize": 200,
 		"loop": true,

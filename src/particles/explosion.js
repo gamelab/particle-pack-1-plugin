@@ -48,13 +48,14 @@ Kiwi.Plugins.ParticlePack1.Explosion = function( state, x, y ) {
 		"maxStartTime": 0.2,
 		"minLifespan": 0.4,
 		"maxLifespan": 0.7,
-		"gravity": 0,
+		"gravityX": 0,
+		"gravityY": 0,
 		"startSize": 20,
 		"endSize": 100,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.4",
-			"0.6"
+			0.4,
+			0.6
 		],
 		"alpha": 1,
 		"colEnv0": [
@@ -85,14 +86,12 @@ Kiwi.Plugins.ParticlePack1.Explosion = function( state, x, y ) {
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			6
 		],
 		"textureID": "_128x128",
-		"gravityX": 0,
-		"gravityY": 0,
 		"additive": false
 	};
 

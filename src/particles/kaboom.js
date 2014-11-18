@@ -79,7 +79,7 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
@@ -133,7 +133,6 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 		"maxStartTime": 0.3,
 		"minLifespan": 0.7,
 		"maxLifespan": 1.0,
-		"gravity": 0,
 		"startSize": 10,
 		"endSize": 150,
 		"loop": false,
@@ -335,9 +334,9 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
-			"0.5",
+			0.5,
 			0
 		],
 		"alphaStops": [
@@ -356,13 +355,17 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 	group.x = x;
 	group.y = y;
 	var back = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.backConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.backConfig );
 	var middle = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.middleConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.middleConfig );
 	var fore = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.foreConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.foreConfig );
 	var kaboom = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.kaboomConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.kaboomConfig );
 	group.addChild( back );
 	group.addChild( middle );
 	group.addChild( fore );

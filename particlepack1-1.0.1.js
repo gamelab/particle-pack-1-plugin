@@ -328,13 +328,13 @@ Kiwi.Plugins.ParticlePack1.Bluefire = function( state, x, y ) {
 			0.9882352941176471
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			1
 		],
 		"alphaStops": [
-			"0.2",
+			0.2,
 			0.6
 		],
 		"cells": [
@@ -594,13 +594,14 @@ Kiwi.Plugins.ParticlePack1.Explosion = function( state, x, y ) {
 		"maxStartTime": 0.2,
 		"minLifespan": 0.4,
 		"maxLifespan": 0.7,
-		"gravity": 0,
+		"gravityX": 0,
+		"gravityY": 0,
 		"startSize": 20,
 		"endSize": 100,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.4",
-			"0.6"
+			0.4,
+			0.6
 		],
 		"alpha": 1,
 		"colEnv0": [
@@ -631,14 +632,12 @@ Kiwi.Plugins.ParticlePack1.Explosion = function( state, x, y ) {
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			6
 		],
 		"textureID": "_128x128",
-		"gravityX": 0,
-		"gravityY": 0,
 		"additive": false
 	};
 
@@ -696,12 +695,11 @@ Kiwi.Plugins.ParticlePack1.Fireworks = function( state, x, y ) {
 		"maxStartTime": 0.1,
 		"minLifespan": 0.2,
 		"maxLifespan": 0.5,
-		"gravity": 250,
 		"startSize": 1,
 		"endSize": 30,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -726,7 +724,7 @@ Kiwi.Plugins.ParticlePack1.Fireworks = function( state, x, y ) {
 			0.32941176470588235
 		],
 		"alphaGradient": [
-			"1",
+			1,
 			1,
 			1,
 			0
@@ -803,8 +801,8 @@ Kiwi.Plugins.ParticlePack1.Gasfire = function( state, x, y ) {
 		"endSize": 1,
 		"loop": true,
 		"colEnvKeyframes": [
-			"0.1",
-			"0.3"
+			0.1,
+			0.3
 		],
 		"alpha": 0.5,
 		"colEnv0": [
@@ -828,14 +826,14 @@ Kiwi.Plugins.ParticlePack1.Gasfire = function( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0",
-			"1",
-			"1",
-			"1"
+			0,
+			1,
+			1,
+			1
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			0
@@ -1092,7 +1090,6 @@ Kiwi.Plugins.ParticlePack1.Hitlines = function( state, x, y ) {
 		"maxStartTime": 0.2,
 		"minLifespan": 0.1,
 		"maxLifespan": 0.3,
-		"gravity": 0,
 		"startSize": 2,
 		"endSize": 200,
 		"loop": false,
@@ -1124,7 +1121,7 @@ Kiwi.Plugins.ParticlePack1.Hitlines = function( state, x, y ) {
 		"alphaGradient": [
 			1,
 			1,
-			"0.2",
+			0.2,
 			0
 		],
 		"alphaStops": [
@@ -1225,7 +1222,7 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
@@ -1279,7 +1276,6 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 		"maxStartTime": 0.3,
 		"minLifespan": 0.7,
 		"maxLifespan": 1.0,
-		"gravity": 0,
 		"startSize": 10,
 		"endSize": 150,
 		"loop": false,
@@ -1481,9 +1477,9 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
-			"0.5",
+			0.5,
 			0
 		],
 		"alphaStops": [
@@ -1502,13 +1498,17 @@ Kiwi.Plugins.ParticlePack1.Kaboom = function( state, x, y ) {
 	group.x = x;
 	group.y = y;
 	var back = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.backConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.backConfig );
 	var middle = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.middleConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.middleConfig );
 	var fore = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.foreConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.foreConfig );
 	var kaboom = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.kaboomConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.kaboomConfig );
 	group.addChild( back );
 	group.addChild( middle );
 	group.addChild( fore );
@@ -1658,8 +1658,8 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 		"endSize": 207,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.2",
-			"0.5"
+			0.2,
+			0.5
 		],
 		"alpha": 1,
 		"colEnv0": [
@@ -1685,7 +1685,7 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 		"alphaGradient": [
 			1,
 			1,
-			"1",
+			1,
 			0
 		],
 		"alphaStops": [
@@ -1871,9 +1871,11 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 	group.x = x;
 	group.y = y;
 	var glow = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.glowConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.glowConfig );
 	var bolt = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.boltConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.boltConfig );
 	var lines = new Kiwi.GameObjects.StatelessParticles(
 		state, state.textures.particlePack1SpriteSheet, 0, 0,
 		this.linesConfig );
@@ -2139,7 +2141,7 @@ Kiwi.Plugins.ParticlePack1.Poison = function( state, x, y ) {
 		"endSize": 80,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 0.5,
@@ -2164,7 +2166,7 @@ Kiwi.Plugins.ParticlePack1.Poison = function( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0.3",
+			0.3,
 			1,
 			1,
 			0
@@ -2264,7 +2266,7 @@ Kiwi.Plugins.ParticlePack1.Poof = function ( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"1",
+			1,
 			1,
 			1,
 			0
@@ -2324,7 +2326,7 @@ Kiwi.Plugins.ParticlePack1.Poof = function ( state, x, y ) {
 		"endSize": 180,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -2349,13 +2351,13 @@ Kiwi.Plugins.ParticlePack1.Poof = function ( state, x, y ) {
 			0.9137254901960784
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
 		],
 		"alphaStops": [
-			"0.2",
+			0.2,
 			0.7
 		],
 		"cells": [
@@ -2515,7 +2517,6 @@ Kiwi.Plugins.ParticlePack1.Pow = function( state, x, y ) {
 		"maxStartTime": 0.2,
 		"minLifespan": 0.1,
 		"maxLifespan": 0.3,
-		"gravity": 0,
 		"startSize": 2,
 		"endSize": 200,
 		"loop": false,
@@ -2634,8 +2635,8 @@ Kiwi.Plugins.ParticlePack1.Redfire = function( state, x, y ) {
 		"endSize": 1,
 		"loop": true,
 		"colEnvKeyframes": [
-			"0.1",
-			"0.3"
+			0.1,
+			0.3
 		],
 		"alpha": 0.5,
 		"colEnv0": [
@@ -2659,14 +2660,14 @@ Kiwi.Plugins.ParticlePack1.Redfire = function( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0",
-			"1",
-			"1",
-			"1"
+			0,
+			1,
+			1,
+			1
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			0
@@ -2830,8 +2831,8 @@ Kiwi.Plugins.ParticlePack1.Smoke = function( state, x, y ) {
 		"endSize": 100,
 		"loop": true,
 		"colEnvKeyframes": [
-			"0.1",
-			"0.3"
+			0.1,
+			0.3
 		],
 		"alpha": 0.5,
 		"colEnv0": [
@@ -2855,14 +2856,14 @@ Kiwi.Plugins.ParticlePack1.Smoke = function( state, x, y ) {
 			0.3215686274509804
 		],
 		"alphaGradient": [
-			"0",
-			"1",
-			"1",
-			"0"
+			0,
+			1,
+			1,
+			0
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			6
@@ -2931,7 +2932,7 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function( state, x, y ) {
 		"endSize": 180,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -2956,13 +2957,13 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function( state, x, y ) {
 			0.9137254901960784
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
 		],
 		"alphaStops": [
-			"0.2",
+			0.2,
 			0.7
 		],
 		"cells": [
@@ -3031,7 +3032,7 @@ Kiwi.Plugins.ParticlePack1.Stars = function ( state, x, y ) {
 		"endSize": 185,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -3056,7 +3057,7 @@ Kiwi.Plugins.ParticlePack1.Stars = function ( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
@@ -3126,7 +3127,6 @@ Kiwi.Plugins.ParticlePack1.Tornado = function (state,x,y) {
 		"maxStartTime": 0.8,
 		"minLifespan": 0.8,
 		"maxLifespan": 1,
-		"gravity": 0,
 		"startSize": 2,
 		"endSize": 200,
 		"loop": true,
@@ -3258,7 +3258,7 @@ Kiwi.Plugins.ParticlePack1.Zap = function( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
@@ -3403,8 +3403,8 @@ Kiwi.Plugins.ParticlePack1.Zap = function( state, x, y ) {
 		"endSize": 207,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.2",
-			"0.5"
+			0.2,
+			0.5
 		],
 		"alpha": 1,
 		"colEnv0": [
@@ -3430,7 +3430,7 @@ Kiwi.Plugins.ParticlePack1.Zap = function( state, x, y ) {
 		"alphaGradient": [
 			1,
 			1,
-			"1",
+			1,
 			0
 		],
 		"alphaStops": [

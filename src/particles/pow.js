@@ -134,7 +134,6 @@ Kiwi.Plugins.ParticlePack1.Pow = function( state, x, y ) {
 		"maxStartTime": 0.2,
 		"minLifespan": 0.1,
 		"maxLifespan": 0.3,
-		"gravity": 0,
 		"startSize": 2,
 		"endSize": 200,
 		"loop": false,

@@ -139,8 +139,8 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 		"endSize": 207,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.2",
-			"0.5"
+			0.2,
+			0.5
 		],
 		"alpha": 1,
 		"colEnv0": [
@@ -166,7 +166,7 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 		"alphaGradient": [
 			1,
 			1,
-			"1",
+			1,
 			0
 		],
 		"alphaStops": [
@@ -352,9 +352,11 @@ Kiwi.Plugins.ParticlePack1.Lightning = function( state, x, y ) {
 	group.x = x;
 	group.y = y;
 	var glow = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.glowConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.glowConfig );
 	var bolt = new Kiwi.GameObjects.StatelessParticles(
-		state, state.textures.particlePack1SpriteSheet, 0, 0, this.boltConfig );
+		state, state.textures.particlePack1SpriteSheet, 0, 0,
+		this.boltConfig );
 	var lines = new Kiwi.GameObjects.StatelessParticles(
 		state, state.textures.particlePack1SpriteSheet, 0, 0,
 		this.linesConfig );

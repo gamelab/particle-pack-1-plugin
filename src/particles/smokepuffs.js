@@ -54,7 +54,7 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function( state, x, y ) {
 		"endSize": 180,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -79,13 +79,13 @@ Kiwi.Plugins.ParticlePack1.Smokepuffs = function( state, x, y ) {
 			0.9137254901960784
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
 		],
 		"alphaStops": [
-			"0.2",
+			0.2,
 			0.7
 		],
 		"cells": [

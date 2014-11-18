@@ -79,13 +79,13 @@ Kiwi.Plugins.ParticlePack1.Bluefire = function( state, x, y ) {
 			0.9882352941176471
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			1
 		],
 		"alphaStops": [
-			"0.2",
+			0.2,
 			0.6
 		],
 		"cells": [

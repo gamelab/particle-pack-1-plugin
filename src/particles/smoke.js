@@ -54,8 +54,8 @@ Kiwi.Plugins.ParticlePack1.Smoke = function( state, x, y ) {
 		"endSize": 100,
 		"loop": true,
 		"colEnvKeyframes": [
-			"0.1",
-			"0.3"
+			0.1,
+			0.3
 		],
 		"alpha": 0.5,
 		"colEnv0": [
@@ -79,14 +79,14 @@ Kiwi.Plugins.ParticlePack1.Smoke = function( state, x, y ) {
 			0.3215686274509804
 		],
 		"alphaGradient": [
-			"0",
-			"1",
-			"1",
-			"0"
+			0,
+			1,
+			1,
+			0
 		],
 		"alphaStops": [
 			0.3,
-			"0.6"
+			0.6
 		],
 		"cells": [
 			6

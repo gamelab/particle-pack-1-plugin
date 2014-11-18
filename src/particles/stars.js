@@ -54,7 +54,7 @@ Kiwi.Plugins.ParticlePack1.Stars = function ( state, x, y ) {
 		"endSize": 185,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.3",
+			0.3,
 			0.6
 		],
 		"alpha": 1,
@@ -79,7 +79,7 @@ Kiwi.Plugins.ParticlePack1.Stars = function ( state, x, y ) {
 			0
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0

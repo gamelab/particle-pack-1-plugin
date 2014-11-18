@@ -79,7 +79,7 @@ Kiwi.Plugins.ParticlePack1.Zap = function( state, x, y ) {
 			1
 		],
 		"alphaGradient": [
-			"0",
+			0,
 			1,
 			1,
 			0
@@ -224,8 +224,8 @@ Kiwi.Plugins.ParticlePack1.Zap = function( state, x, y ) {
 		"endSize": 207,
 		"loop": false,
 		"colEnvKeyframes": [
-			"0.2",
-			"0.5"
+			0.2,
+			0.5
 		],
 		"alpha": 1,
 		"colEnv0": [
@@ -251,7 +251,7 @@ Kiwi.Plugins.ParticlePack1.Zap = function( state, x, y ) {
 		"alphaGradient": [
 			1,
 			1,
-			"1",
+			1,
 			0
 		],
 		"alphaStops": [

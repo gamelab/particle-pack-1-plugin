@@ -48,7 +48,6 @@ Kiwi.Plugins.ParticlePack1.Hitlines = function( state, x, y ) {
 		"maxStartTime": 0.2,
 		"minLifespan": 0.1,
 		"maxLifespan": 0.3,
-		"gravity": 0,
 		"startSize": 2,
 		"endSize": 200,
 		"loop": false,
@@ -80,7 +79,7 @@ Kiwi.Plugins.ParticlePack1.Hitlines = function( state, x, y ) {
 		"alphaGradient": [
 			1,
 			1,
-			"0.2",
+			0.2,
 			0
 		],
 		"alphaStops": [
