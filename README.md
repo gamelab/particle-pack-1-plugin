@@ -1,24 +1,20 @@
 WebGL Particles Pack 1 - Cartoon Particles
 ==========================================
 
-Name: ParticlesPack1
+	Name: ParticlesPack1
+	Version: 1.0.2
+	Type: GameObject Plugin
+	Author: Kiwi.js Team
+	Website: www.kiwijs.org
+	KiwiJS last version tested: 1.1.1
 
-Version: 1.0.1
-
-Type: GameObject Plugin
-
-Author: Kiwi.js Team
-
-Website: www.kiwijs.org
-
-KiwiJS last version tested: 1.1.1
-
-Tutorials for this plugin can be found on the Kiwi.JS website here:
-
-[Using the ParticlesGL Plugin](UPDATE ME)
-
+Tutorials for using particles can be found on the Kiwi.JS website at [Using the ParticlesGL Plugin](http://www.kiwijs.org/using-the-particle-effects-plugin).
 
 ## Version Release Notes
+
+1.0.2
+- Update library to ParticlesGL 1.1.2 to resolve bugs
+
 1.0.1
 - Update libraries to ParticlesGL 1.1.1 and KiwiJS 1.1.1
 - Fixed a config bug that would make particles invisible on some devices
@@ -27,19 +23,20 @@ Tutorials for this plugin can be found on the Kiwi.JS website here:
 - First Release ready for Kiwi.js version 1.0.0
 
 
-## Description:
-The Cartoon Particle Pack plugin comes with a bunch of preconfigured particle effects to add to your game.
-Explosions, fire, gasleaks, poison and punch-up particles are all included. This plugin requires the
-ParticlesGL plugin, which is included with the pack. 
-If you have any problems then feel free to contact us via the http://www.kiwijs.org/help
+## Description
+
+The Cartoon Particle Pack plugin comes with a bunch of preconfigured particle effects to add to your game. Explosions, fire, gasleaks, poison and punch-up particles are all included.
+
+This plugin requires the ParticlesGL plugin, which is included with the pack.
+If you have any problems then feel free to contact us via http://www.kiwijs.org/help
 
 
 ## Dependencies
 
 - Kiwi.js version 1.1.0 or greater
-- ParticlesGL version 1.1.1 or greater
+- ParticlesGL version 1.1.2 or greater
 
-## How to Include:
+## How to Include
 
 Copy the files you need:
 - Create a folder called `plugins` in your project folder.
@@ -61,7 +58,7 @@ This will add ALL the particle effects to your game. If you want to add them ind
 	<script src="plugins/particles/bam.js></script>
 
 Register the plugins:
-You'll need to tell you game that it intends to use the plugins by adding their names to the plugin config option. Also remember that the effects only work with the WebGL renderer. 
+You'll need to tell you game that it intends to use the plugins by adding their names to the plugin config option. Also remember that the effects only work with the WebGL renderer.
 
 	var MyGame = new Kiwi.Game( "exampleGameContainer",
 		"testGame", MyState, { renderer: Kiwi.RENDERER_WEBGL,
