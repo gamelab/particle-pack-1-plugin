@@ -4,33 +4,12 @@ module.exports = function( grunt ) {
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( "package.json" ),
 
-		yuidoc: {
-			compile: {
-				name: "<%= pkg.name %>",
-				description: "<%= pkg.description %>",
-				version: "<%= pkg.version %>",
-				url: "<%= pkg.homepage %>",
-				options: {
-					extension: ".js",
-					paths: "src/",
-					outdir: "docs/"
-				}
-			}
-		},
-
-		uglify: {
-			build: {
-				files: {
-					"<%= pkg.filenameBase %>-<%= pkg.version %>.min.js":
-						["<%= pkg.main %>**/*.js"]
-				}
-			}
-		},
+		clean: [ "build" ],
 
 		concat: {
 			build: {
 				src: [ "src/**/*.js" ],
-				dest: "<%= pkg.filenameBase %>-<%= pkg.version %>.js"
+				dest: "build/<%= pkg.filenameBase %>-<%= pkg.version %>.js"
 			}
 		},
 
@@ -53,25 +32,48 @@ module.exports = function( grunt ) {
 				newcap: true,
 				quotmark: "double"
 			}
+		},
+
+		yuidoc: {
+			compile: {
+				name: "<%= pkg.name %>",
+				description: "<%= pkg.description %>",
+				version: "<%= pkg.version %>",
+				url: "<%= pkg.homepage %>",
+				options: {
+					extension: ".js",
+					paths: "src/",
+					outdir: "docs/"
+				}
+			}
+		},
+
+		uglify: {
+			build: {
+				files: {
+					"build/<%= pkg.filenameBase %>-<%= pkg.version %>.min.js":
+						["<%= pkg.main %>**/*.js"]
+				}
+			}
 		}
 	});
 
-	grunt.loadNpmTasks( "grunt-contrib-uglify" );
-	grunt.loadNpmTasks( "grunt-contrib-yuidoc" );
+	grunt.loadNpmTasks( "grunt-contrib-clean" );
 	grunt.loadNpmTasks( "grunt-contrib-concat" );
 	grunt.loadNpmTasks( "grunt-contrib-connect" );
 	grunt.loadNpmTasks( "grunt-contrib-jshint" );
+	grunt.loadNpmTasks( "grunt-contrib-uglify" );
+	grunt.loadNpmTasks( "grunt-contrib-yuidoc" );
 
 	grunt.registerTask( "default", [
 		"jshint",
+		"clean",
 		"concat:build",
 		"uglify:build"
 		]);
 
 	grunt.registerTask( "full", [
-		"jshint",
-		"concat:build",
-		"uglify:build",
+		"default",
 		"yuidoc:compile"
 		]);
 
