@@ -10,7 +10,7 @@
 
 ## Description
 
-The Cartoon Particle Pack plugin comes with a bunch of preconfigured particle effects to add to your game. Includes 19 sprites and 20 pre-configured effects to create explosions, fire, gasleaks, poison, punch-up particles and more.
+The Cartoon Particle Pack plugin comes with a bunch of preconfigured particle effects to add to your game. Includes 19 sprites and pre-configured effects to create explosions, fire, gasleaks, poison, punch-up particles and more.
 
 This plugin requires the ParticlesGL plugin, which is included with the pack.
 If you have any problems then feel free to contact us via http://www.kiwijs.org/help
@@ -119,7 +119,6 @@ this.tornado = Kiwi.Plugins.ParticlePack1.Tornado( this, 400, 300 );
 this.hitlines = Kiwi.Plugins.ParticlePack1.Hitlines( this, 400, 300 );
 this.smoke = Kiwi.Plugins.ParticlePack1.Smoke( this, 400, 300 );
 this.smokepuffs = Kiwi.Plugins.ParticlePack1.Smokepuffs( this, 400, 300 );
-this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks( this, 400, 300 );
 ```
 
 Group effects (these return a group of particle gameobjects):

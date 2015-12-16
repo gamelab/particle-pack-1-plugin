@@ -35,10 +35,6 @@ MyState.preload = function() {
 		"particlePack1SpriteSheet",
 		"../assets/particlepack1_128.png",
 		128, 128, true, 19, 5, 5, 27, 27, 54, 54 );
-	this.addSpriteSheet(
-		"particlePack1SpriteSheet16",
-		"../assets/particlepack1_16.png",
-		16, 16, true, 9, 5, 5, 4, 4, 8, 8 );
 };
 
 MyState.create = function() {
@@ -60,7 +56,6 @@ MyState.create = function() {
 	// Multiple particle effects - these return a group
 	this.bam = Kiwi.Plugins.ParticlePack1.Bam( this, 400, 300 );
 	this.boom = Kiwi.Plugins.ParticlePack1.Boom( this, 400, 300 );
-	this.fireworks = Kiwi.Plugins.ParticlePack1.Fireworks( this, 400, 300 );
 	this.poof = Kiwi.Plugins.ParticlePack1.Poof( this, 400, 300 );
 	this.pow = Kiwi.Plugins.ParticlePack1.Pow( this, 400, 300 );
 	this.zap = Kiwi.Plugins.ParticlePack1.Zap( this, 400, 300 );
